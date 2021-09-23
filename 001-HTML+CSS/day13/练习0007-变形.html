@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*.box2{*/
+            /*position: absolute;*/
+            /*left: 50%;*/
+            /*top: 50%;*/
+            /*background-color: #6bb8fc;*/
+            /*!*transform: translateX(-50%) translateX(-50%) ;*!*/
+            /*transform: translate(-50%,-50%);*/
+        /*}*/
+        html{
+            perspective: 800px;
+            /*perspective 视距 ，设置人的眼睛和网页之间的距离*/
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #00FFFF;
+            margin: 200px auto;
+            /*
+               transform
+                   - 通过变形可以对元素进
+                       平移、旋转，放大、缩小 等操作
+
+                translateX() 沿x轴方向平移
+                translateY() 沿y轴方向平移
+                   - 可以使用百分比的值，这个值是相对于自己的宽度和高度计算
+                translateZ() 沿z轴方向平移
+           */
+            transition: all 2s;
+
+            /*transform: rotateX(360deg);*/
+        }
+        .box1:hover{
+            /*水平平移*/
+            /*transform: translateX(-100px);*/
+            /*transform: translateY(100px);*/
+            /*!*垂直平移*!*/
+            /*transform: translateY(50%);*/
+
+            /*!*z轴的移动，元素距离用户的距离*!*/
+            /*transform: translateZ(300px);*/
+
+            /*!*沿x轴旋转*!*/
+            /*transform: rotateX(45deg) translateZ(100px);*/
+            /*transform: rotateX(360deg);*/
+
+            /*transform: rotateY(90deg);*/
+            /*transform: rotateZ(45deg);*/
+
+            /*transform: translateX(100px) rotateZ(45deg);*/
+            /*transform: rotateZ(45deg) translateX(100px) ;*/
+            /*transform:rotateZ(45deg) translateX(100px);*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--<div class="box2">aaaaaaaaaaaaaaaaaaaaaaaaaaa</div>-->
+
+<div class="box1"></div>
+<div class="box3"></div>
+
+</body>
+</html>

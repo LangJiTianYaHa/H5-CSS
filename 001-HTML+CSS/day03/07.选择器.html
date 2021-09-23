@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+/*        为class为box的div设置一个字体大小*/
+        
+/*        
+            交集选择器
+                作用：选中同时符合多个选择器的元素
+                语法：选择器1选择器2...选择器N
+                例子：
+                div.box{}
+        */
+        div.box{
+            font-size: 50px
+        }
+        
+/*        .box  *.box  */
+        
+/*        div#box{} 不建议这么创建规则*/
+    </style>
+</head>
+<body>
+   
+   <div class="box">
+       我是一个div
+   </div>
+   
+   <p class="box">
+       我是一个p
+   </p>
+    <div class="box"></div>
+    <div id="z3"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+/*            height: 100px;*/
+            height: 200px;
+            background-color: #bfa;
+/*            padding-top: 100px;*/
+/*            padding-top: 1px;*/
+            border-top: 1px red solid;
+        }
+        
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin-top: 100px;
+/*            
+            外边距的折叠
+                兄弟元素
+                    - 兄弟元素相邻会取最大值
+                父子元素
+                    - 父子元素的相邻垂直外边距，子元素的外边距会传递给父元素
+            
+            */
+        }
+    </style>
+</head>
+<body>
+   
+   <div class="box1">
+       <div class="box2"></div>
+   </div>
+    
+</body>
+</html>

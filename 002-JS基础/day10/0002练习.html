@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 * 定义一个函数，判断一个数字是否是偶数，如果是返回true，否则返回false
+			 */
+			
+			function isOushu(num){
+				/*if(num % 2 == 0){
+					return "true";
+				}else{
+					return "false";
+					
+				}*/
+				
+				return num % 2 == 0;
+				
+			}
+			
+			var result = isOushu(3);
+//			console.log("result = "+result);
+
+
+			/*
+			 * 定义一个函数，可以根据半径计算一个圆的面积，并返回计算结果
+			 * 3.14*r*r
+			 */
+			
+			function mianji(r){
+				return 3.14*r*r;
+				
+			}
+			var result1 = mianji(2);
+			//console.log("result1 = "+result1);
+			
+			
+			
+			/*
+			 * 创建一个函数，可以在控制台中输出一个人的信息
+			 * 	可以输出人的 name age gender address
+			 * 
+			 * 实参可以是任意的数据类型，也可以是一个对象
+			 * 	当我们的参数过多时，可以将参数封装到一个对象中，然后通过对象传递
+			 */
+			
+			/*function Info(name,age,gender,address){
+				console.log("我是"+name+",我今年"+age+"岁了，我的性别是"+gender+"，我家住在"+address);
+			}
+			Info("孙悟空","18","男","花果山");*/
+			
+			function Info1(o){
+				console.log("我是"+o.name+",我今年"+o.age+"岁了，我的性别是"+o.gender+"，我家住在"+o.address);
+				
+			}
+			
+			//创建对象传递实参
+			var obj ={
+				name:"猪八戒",
+				age:"18",
+				gender:"男",
+				address:"高老庄"
+			}
+//			Info1(obj);
+			
+			
+			
+			
+			/*
+			 * 实参可以是一个对象，也可以是一个函数
+			 */
+			
+			function fun1(a){
+				console.log("a = "+a);
+//				a(obj);
+			}
+		//	fun1(Info1);  //实参为对象
+			//fun1(Info1(obj));  //实参为函数
+			
+			
+			fun1(mianji(10)); //实参为函数
+			fun1(mianji);  //实参为对象
+			
+			
+			/*
+			 * mianji()
+			 * 	- 调用函数
+			 * 	- 相当于使用的函数的返回值
+			 * 
+			 * mianji
+			 * 	- 函数对象
+			 * 	- 相当于直接使用函数对象
+			 */
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

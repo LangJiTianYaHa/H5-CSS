@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px red solid;
+            font-size: 30px;
+            line-height: 30px;
+/*            行间距 = 行高 - 字体*/
+        }
+        
+        p{
+            font-size: 30px;
+            
+/*          字重 字体是否加粗 
+                可以设置一个 100 - 900之间的值
+                值越大字体越粗
+                注意：200不一定比100粗，也有可能和100一样
+            */
+/*            font-weight:800; */
+            font-weight: bold;
+            
+/*          font-style 用来设置字体的样式（斜体）
+                可选值：
+                    normal 正常
+                    italic 斜体
+                
+            */
+            font-style: italic;
+            
+            
+/*            font-variant 字体变形
+                small-caps 小型大写字母
+            */
+            
+            font-variant:small-caps;
+        }
+        
+        span{
+/*
+            font-size: 40px;
+            font-family: '微软雅黑';
+            font-weight: bold;
+            font-style: italic;
+            font-variant: small-caps;
+*/
+            
+/*            font 字体简写属性，可以同时设置字体相关的所有样式
+            
+                后边两个必须是字体大小 和 字体族，并且必须写
+            
+            font:[加粗 斜体 变形] 大小/行高 字体族;
+            */
+            
+/*            font: bold italic small-caps 40px '微软雅黑';*/
+            font: 40px/1.5 '微软雅黑';
+        }
+    </style>
+</head>
+<body>
+  
+  <p>
+      Hello Hello
+  </p>
+  
+  <span>我是一个Span</span>
+   
+<!--   <div>Hello 你好 Hello 你好Hello 你好Hello 你好Hello 你好Hello 你好Hello 你好Hello 你好Hello 你好Hello 你好Hello 你好</div>-->
+    
+</body>
+</html>

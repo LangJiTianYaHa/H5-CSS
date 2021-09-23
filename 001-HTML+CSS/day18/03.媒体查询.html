@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        /*
+            and 表示两个条件必须同时满足
+            , 表示或者
+         */
+        /*@media (width: 800px) , (width:700px) {*/
+        /*    body{*/
+        /*        background-color: #bfa;*/
+        /*    }*/
+        /*}*/
+        
+        /*@media only screen and (min-width: 500px) and (max-width: 800px) {*/
+        /*    body{*/
+        /*        background-color: #bfa;*/
+        /*    }*/
+        /*}*/
+
+        /*
+            not 表示取反
+                - 注意，not不是对某个条件进行取反，而是对整个条件
+        */
+        @media not screen and (orientation: landscape) {
+            body{
+                background-color: yellow;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>

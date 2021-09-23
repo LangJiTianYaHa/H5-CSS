@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script>
+			
+			//创建一个Number类型的对象
+			//num = 3;
+			/*var num = new Number(3);
+			var num2 = new Number(3);
+			var str = new String("hello");
+			var str2 = new String("hello");
+			var bool = new Boolean(true);
+			var bool2 = true;*/
+			var num = new Number(3);
+			
+			/*console.log(num);
+			console.log(typeof num);*/
+			
+			var result = num.hello = "abc";
+			console.log(result);
+			//向num中添加一个属性
+			/*num.hello = "abcdefg";*/
+			
+			//console.log(str === str2);
+			
+			/*var b = new Boolean(false);*/
+			
+			var b = new Boolean(true);
+			if(b){
+				console.log("我运行了~~~");
+			}
+			/*if(b){
+				alert("我运行了~~~");
+			}*/
+			
+			/*
+			 * 方法和属性之能添加给对象，不能添加给基本数据类型
+			 * 	当我们对一些基本数据类型的值去调用属性和方法时，
+			 * 		浏览器会临时使用包装类将其转换为对象，然后在调用对象的属性和方法
+			 * 		调用完以后，在将其转换为基本数据类型
+			 */
+			/*var s = 123;
+			
+			s = s.toString();
+			
+			s.hello = "你好";
+			
+			console.log(s.hello);*/
+			//console.log(typeof s);
+			
+			var s = 123;
+			s = s.toString();
+
+			console.log(s);
+			console.log(typeof s);
+			result =  s.hello = "你好";
+			console.log(result);
+			console.log(typeof result);
+			
+			console.log(s.hello);
+			console.log(typeof s.hello);
+			
+			
+		</script>
+		
+		
+	</head>
+	<body>
+	</body>
+</html>

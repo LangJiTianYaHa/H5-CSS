@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单的结构</title>
+    
+    <style>
+    
+        .box1{
+            width: 100px;
+            height: 40px;
+            background-color: #ff0;
+        }
+        
+        .box1 a{
+            display: block;
+            height: 40px;
+            width: 100px;
+            line-height: 40px;
+            text-align: center;
+        }
+        
+/*
+        .box2{
+            width: 500px;
+            height: 200px;
+            background-color: #bfa;
+            
+            position: absolute;
+            display: none;
+        }
+*/
+        
+        
+        
+        .box2{
+            width: 500px;
+/*            通过设置高度为0隐藏元素*/
+            height: 0;
+            overflow: hidden;
+            
+            background-color: #bfa;
+            position: absolute;
+            left: 0;
+            
+            
+            transition: all 2s 1s;
+        }
+        
+        
+        
+        
+        
+        .box1:hover .box2{
+/*            display: block;*/
+            
+            height: 200px;
+            left: 800px;
+        }
+    
+    
+    
+    </style>
+    
+</head>
+<body>
+   
+   <div class="box1">
+       
+       <a href="#">超连接</a>
+       <div class="box2">
+           我是下拉菜单
+       </div>
+       
+       
+       
+   </div>
+    
+</body>
+</html>

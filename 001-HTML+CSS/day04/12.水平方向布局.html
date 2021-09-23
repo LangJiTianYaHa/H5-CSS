@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 200px;
+            border: 4px solid red;
+        }
+        
+/*        
+        子元素在父元素的位置是父元素的内容区
+            子元素在父元素中的水平方向的布局，必须满足如下等式
+        margin-left + border-left + padding-left + width + padding-right + border-right + margin-right = 父元素的width
+        
+        500
+        0 0 0 100 0 0 0(400)
+        0 0 0 510 0 0 0(-10)
+        0 0 0 auto(500) 0 0 0
+        100 0 0 auto(400) 0 0 0
+        auto 0 0 100 0 0 0
+        auto 0 0 100 0 0 auto
+        在水平方向，有三个值可以设置auto
+            分别是 margin-left width margin-right
+            设置为auto以后，浏览器会自动计算该属性的值
+            
+        - 如果七个值的和相加不等于父元素的宽度，则属于过度约束，
+            则浏览器会自动调整右外边距的值
+        
+        - 如果将margin-left 或 margin-right 的一侧设置为auto，
+            则侧会设置尽量大的值
+        
+        - 如果left和right都设置auto，则会将两侧外边距设置相等的值，
+            从而导致子元素在父元素中水平居中
+*/
+        .box2{
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+            background-color: #bfa
+        }
+    </style>
+</head>
+<body>
+   
+   
+   <div class="box1">
+       <div class="box2"></div>
+       <span>hello</span>
+   </div>
+    
+</body>
+</html>

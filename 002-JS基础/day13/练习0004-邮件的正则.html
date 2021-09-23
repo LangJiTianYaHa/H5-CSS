@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script type="text/javascript">
+			
+			
+			/*
+			 * 电子邮件
+			 * 	hello  .nihao          @     abc  .com.cn
+			 * 
+			 * 任意字母数字下划线    .任意字母数字下划线  @   任意字母数字     .任意字母（2-5位）   .任意字母（2-5位）
+			 *   
+			 *   \w{3,}   (\.w+)*  @  [A-z0-9]+     (\.[A-z]{2,5}){1,2}
+			 * 
+			 * 
+			 * \w{3,}  (\.\w+)*  @  [A-z0-9]+  (\.[A-z]{2,5}){1,2}
+			 * 
+			 */
+			
+			//创建正则表达式
+			var emailreg =  /^\w{3,}(\.\w+)*@[A-z0-9]+(\.[A-z]{2,5}){1,2}$/;
+			/*var reg = "2414965060@qq.com";*/
+			
+			var reg = prompt("请输入你的邮箱:");
+			
+			console.log(emailreg.test(reg));
+			
+			
+		</script>
+		
+		
+	</head>
+	<body>
+	</body>
+</html>

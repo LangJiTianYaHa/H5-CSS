@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		
+		<script type="text/javascript">
+/*			1.以函数的形式调用时，this永远都是window
+			2.以方法的形式调用时，this就是调用方法的那个对象*/
+			
+			
+			//创建一个全局的name
+			var name  = "全局的name";
+			//创建fun1函数
+			function fun1(){
+				
+				console.log(this.name);
+			}
+			
+			//  创建两个对象
+			var obj1  = {
+				name:"孙悟空",
+				sayName:fun1   //把obj1的属性设置为一个函数
+				
+			};
+			
+			var obj2  = {
+				name:"猪八戒",
+				sayName:fun1   //把obj2的属性设置为一个函数
+				
+			};
+			
+			//调用
+			fun1();
+			obj1.sayName();
+			obj2.sayName();
+			
+			
+			console.log("**********");
+			obj1.sayName;
+			
+			
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

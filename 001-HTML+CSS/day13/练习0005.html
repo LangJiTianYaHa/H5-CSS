@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画属性</title>
+
+    <style>
+
+        .box1{
+            height: 256px;
+            width: calc(1536px/6);
+            margin: 0 auto;
+            background-image: url("img/bg3.png");
+
+            /* 指定动画名*/
+            /*animation-name: test1;*/
+            /* 设置动画持续 时间*/
+            /*animation-duration: 500ms;*/
+            /* 设置动画的 延时*/
+            /*animation-delay: 2s;*/
+            /*  指定时间函数*/
+            /*animation-timing-function: steps(6,end);*/
+
+            /*设置 动画执行次数*/
+            /*            animation-iteration-count: infinite;*/
+            /*animation-iteration-count: infinite;*/
+
+            /*    animation-play-state
+              动画的播放的状态
+                  可选值：
+                      paused 动画暂停
+                      running 动画运行（默认值）
+
+
+            animation-direction 动画运行的方向
+              可选值
+                  normal 默认值，动画从 0% - 100%执行
+                  reverse 反转执行 100% - 0%执行
+                  alternate 第一次从0-100 第二次从 100-0 交替
+                  alternate-reverse
+      */
+            /*animation-direction:alternate-reverse;*/
+
+            animation: test1 500ms 400ms steps(6,end) infinite reverse;
+            /* 动画名 持续时间 延时 时间函数  执行次数 动画运行的方向*/
+                       /*animation-timing-function*/
+
+
+
+        }
+        /*.box1:hover{*/
+            /*animation-play-state:paused;*/
+        /*}*/
+
+
+
+
+        /*动画*/
+        /*- 通过动画可以实现一些更加复杂的交互效果*/
+        /*- 要实现css动画，必须要线设置关键帧*/
+        /*-  @keyframes  用来设置关键帧*/
+
+        /*@keyframes 名字 {*/
+
+        /*}*/
+
+        @keyframes test1 {
+            from{
+                background-position: 0 0;
+
+
+            }
+            to{
+                background-position:-1536px 0 ;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box1">
+
+</div>
+
+</body>
+</html>

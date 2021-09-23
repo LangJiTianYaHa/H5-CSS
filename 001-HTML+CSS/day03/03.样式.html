@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+<!--    
+    第二种方式，可以将样式编写到style标签中（style标签需要写在head里）
+    
+    将样式编写到style标签中，然后通过CSS选择器选中指定的元素并为其设置样式。将HTML和CSS代码分离开，使CSS样式可以复用，并且方便后期的维护
+-->
+<!--
+    <style>
+        p{
+            color:greenyellow;
+            font-size: 50px;
+            background-color: yellow;
+        }
+        
+        h1{
+            color: yellowgreen
+        }
+    </style>
+-->
+
+<!--
+    第三种方式，还可以将CSS代码编写到一个外部的CSS文件中然后通过link标签将其引入到页面中
+    
+    将CSS写在外部的样式表中，使结构和表现完全分离，
+    可以在不通的页面中对样式表进行复用，方便后期的维护
+    
+    将样式表写在外部文件中，可以充分的利用到浏览器的缓存机制，进而加快页面的加载速度，提高用户体验
+-->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<!--   
+    CSS（层叠样式表）   
+        - 用来处理网页的表现
+        - 网页中所有外在显示效果都由CSS来控制
+-->
+   
+<!--   
+      第一种方式，可以直接将CSS代码编写到标签的style属性中，将样式直接编写到style属性中这样会导致结构和表现耦合，不方便代码的复用，并且不方便后期的维护，所以在开发中永远不要使用内联样式
+  -->
+<!--
+   <p style='color:skyblue;font-size:60px;'>落霞与孤鹜齐飞，秋水共长天一色</p>
+   
+   <p style="color: skyblue;font-size: 60px;">今天天气真不错</p>
+   
+   <p style="color: skyblue;font-size: 60px;">我们大家来上课</p>
+-->
+  
+  <h1>我是一个标题</h1>
+  
+   <p>落霞与孤鹜齐飞，秋水共长天一色</p>
+   
+   <p>今天天气真不错</p>
+   
+   <p>我们大家来上课</p>
+   <p>我们大家来上课</p>
+   <p>我们大家来上课</p>
+   <p>我们大家来上课</p>
+   <p>我们大家来上课</p>
+   <p>我们大家来上课</p>
+   <p>我们大家来上课</p>
+    
+    
+</body>
+</html>

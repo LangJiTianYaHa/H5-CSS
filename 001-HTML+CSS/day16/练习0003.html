@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul{
+            border: 2px red solid;
+            display: flex;
+
+            height: 600px;
+            /*flex-direction: row;*/
+            /*flex-wrap: wrap;*/
+
+            flex-flow: row-reverse wrap;
+            /*  对齐方式
+
+
+
+
+            */
+            justify-content:center;
+
+
+
+        /*
+            侧轴
+
+        */
+
+            align-items: stretch;
+
+
+        }
+
+        li{
+            width: 300px;
+            /*height: 100px;*/
+            background-color: #bfa;
+
+            /*    禁止盒子收缩*/
+            flex-shrink: 0;
+            /*  s设置盒子的伸展*/
+            /*flex-grow: 1;*/
+        }
+
+        li:nth-child(1){}
+        li:nth-child(2){
+            background-color: orange;
+        }
+        li:nth-child(3){
+            background-color: yellowgreen;
+        }
+        li:nth-child(4){
+            background-color: yellow;
+        }
+        li:nth-child(5){
+            background-color: skyblue;
+        }
+        li:nth-child(6){
+            background-color: tomato;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+
+</ul>
+
+
+</body>
+</html>

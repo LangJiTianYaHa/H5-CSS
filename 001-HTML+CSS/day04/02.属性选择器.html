@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+/*        
+        属性选择器，根据元素的属性来选中元素
+            [属性名] 获取含有指定属性的元素
+        
+        */
+        
+/*
+        [title]{
+            color: red;
+        }
+*/
+/*
+        [title='hello']{
+            color: red;
+        }
+*/
+        
+/*
+        [title^='h']{
+            color: red;
+        }
+*/
+        
+/*
+        [title$='h']{
+            color: red;
+        }
+*/
+        
+/*
+        [title*='h']{
+            color: red;
+        }
+*/
+        
+        [title='hello' i]{
+            color: red;
+        }
+    
+    </style>
+</head>
+<body>
+   
+   <div title="Hello">我是一个div</div>
+   
+   <div>我也是一个div</div>
+   
+   <p title='hgood'>我是一个p元素</p>
+    
+</body>
+</html>

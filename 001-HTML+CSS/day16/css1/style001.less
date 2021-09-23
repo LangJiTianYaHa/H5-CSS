@@ -1,0 +1,31 @@
+//使用 @ 符来定义变量
+//可以将变量的值的作为选择器使用
+// @{变量名}
+//$样式名 可以直接引用其他属性的值
+
+@a:20px;
+@w:100px;
+@red:#f10000;
+
+
+
+@className:box2;
+
+.box1{
+  width: @a;
+  height: 200 + 300px;
+}
+
+.@{className}{
+  height: @w*2;
+
+  width: @a;
+  //$样式名 可以直接引用其他属性的值
+  height: $width * .3;
+
+}
+
+.box2{
+  @a:w;
+  width: @@a;
+}

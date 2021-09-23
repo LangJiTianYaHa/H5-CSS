@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习0005-左边固定中间自适应</title>
+    
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .outer{
+            width: 100%;
+            
+        }
+        
+        .left{
+            float: left;
+            width: 200px;
+            height: 500px;
+            background-color: #bfa;
+            
+        }
+        
+        .main{
+            float: left;
+/*            width: calc(100% - 200px);*/
+            width: calc(100% - 400px);
+            height: 500px;
+            background-color: #aaa;
+        }
+    
+        
+        .right{
+            float: left;
+            width: 200px;
+            height: 500px;
+            background-color: bisque;
+        }
+    
+    </style>
+    
+    
+</head>
+<body>
+   <div class="outer">
+       <div class="left">左边</div>
+       
+       
+       <div class="main">中间 主要内容</div>
+       
+       <div class="right">右边</div>
+       
+   </div>
+    
+</body>
+</html>

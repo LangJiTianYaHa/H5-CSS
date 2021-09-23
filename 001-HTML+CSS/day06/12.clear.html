@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 400px;
+            background-color: #bfa;
+            float: left;
+        }
+    
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: #ff0;
+            float: right;
+        }
+    
+        .box3{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+/*            
+            clear 用来清除浮动元素对当前元素的影响
+                可选值：
+                    none 默认值 不清除
+                    left 清除左侧浮动元素对当前元素的影响
+                    right 清除右侧浮动元素对当前元素的影响
+                    both 清除两侧中对当前元素影响最大的那一侧
+                
+            
+            */
+            clear: right;
+        }
+    
+    </style>
+</head>
+<body>
+   
+   <div class="box1"></div>
+   <div class="box2"></div>
+   <div class="box3"></div>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 0 auto;
+/*            边框间距*/
+/*            border-spacing: 0px;*/
+            
+/*            合并单元格 border-collapse  */
+            border-collapse: collapse;
+        }
+        
+        td{
+            border: 1px black solid;
+            height: 100px;
+            text-align: center;
+            vertical-align: middle;
+            
+        }
+        
+/*
+        td:hover{
+            background-color: yellow;
+        }
+*/
+        
+         
+        
+        tbody > tr:hover{
+            background-color: yellow;
+        }
+        
+        tr:nth-child(odd){
+            background-color: #bfa;
+        }
+        
+        
+        .box1{
+/*            设置 块 为单元格*/
+            display: table-cell;
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            vertical-align: middle;
+/*            margin-bottom: 100px;*/
+        }
+        
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin: 0 auto;
+        }
+       
+    </style>
+</head>
+<body>
+ 
+ <div class="box1">
+     <div class="box2"></div>
+ </div>
+ 
+  
+<!--  
+      创建表格时，如果没有使用tbody，浏览器会自动添加tbody，并且将所有的tr都添加到tbody中，
+      所以tr的父元素并不是table而是tbody
+  -->
+   
+   <table>
+       
+       <tr>
+           <td>aa</td>
+           <td>bb</td>
+           <td>cc</td>
+           <td>dd</td>
+       </tr>
+       
+       <tr>
+           <td>aa</td>
+           <td>bb</td>
+           <td>cc</td>
+           <td>dd</td>
+       </tr>
+       
+       <tr>
+           <td>aa</td>
+           <td>bb</td>
+           <td>cc</td>
+           <td>dd</td>
+       </tr>
+       
+        <tr>
+           <td>aa</td>
+           <td>bb</td>
+           <td>cc</td>
+           <td>dd</td>
+       </tr>
+       
+        <tr>
+           <td>aa</td>
+           <td>bb</td>
+           <td>cc</td>
+           <td>dd</td>
+       </tr>
+       
+        <tr>
+           <td>aa</td>
+           <td>bb</td>
+           <td>cc</td>
+           <td>dd</td>
+       </tr>
+       
+   </table>
+    
+</body>
+</html>

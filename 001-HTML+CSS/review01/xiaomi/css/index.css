@@ -1,0 +1,305 @@
+/*首页的样式表*/
+/*设置导航条的容器*/
+
+.bar-wrapper {
+    /*    宽度就是屏幕的宽度*/
+    width: 100%;
+    /*    高度*/
+    height: 40px;
+    /*    背景颜色*/
+    background-color: #333;
+
+}
+
+/*    设置顶部导航条*/
+
+.bar-wrapper .top-bar {
+    height: 100%;
+    line-height: 40px;
+    /*    background-color: aqua;*/
+
+}
+
+/*设置左侧的导航条*/
+.link-bar {
+    /*    左浮*/
+    float: left;
+}
+
+/*设置右侧工具*/
+.info-bar,
+.cart-bar {
+
+    float: right;
+}
+
+/*下载app的链接*/
+.link-bar .download-app {
+    position: relative;
+}
+
+/*鼠标移入显示二维码*/
+.link-bar .download-app:hover .code {
+    display: block;
+}
+
+/*设置左侧的二维码*/
+.link-bar .code {
+    width: 124px;
+    height: 150px;
+    background-color: white;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    left: -40px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    line-height: 1;
+    z-index: 999;
+    display: none;
+
+}
+
+/*设置二维码上方的小三角*/
+.link-bar .arrow {
+    /*    开启绝对定位*/
+    position: absolute;
+    width: 0;
+    height: 0;
+    /*    设置边框*/
+    border: 10px solid #fff;
+    /*    去除上边框*/
+    border-top: none;
+    /*    设置边框的颜色*/
+    border-color: transparent transparent #fff;
+    /*    设置位置*/
+    top: -10px;
+    /*    居中*/
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+/*二维码图片*/
+.code img {
+    margin: 20px;
+}
+
+.link-bar .code span {
+    font-size: 14px;
+    color: #333;
+}
+
+/*
+.link-bar img{
+    margin: 20px;
+}
+*/
+
+/*设置超链接的样式*/
+.bar-wrapper a {
+
+    /*    转换为行内块*/
+    /*    display: inline-block;*/
+    float: left;
+    height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    /*    去除下划线*/
+    text-decoration: none;
+    vertical-align: top;
+
+}
+
+/*鼠标移入效果*/
+.bar-wrapper a:hover {
+    color: #fff;
+}
+
+/*小竖线*/
+.bar-wrapper .line {
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    margin: 0 4px;
+}
+
+/*设置购物车的鼠标移入效果*/
+.cart-bar:hover a {
+    background-color: #fff;
+    color: #ff6700;
+}
+
+
+
+/*设置购物车的样式*/
+
+.cart-bar a {
+
+    float: none;
+    display: block;
+    /*    float: left;*/
+
+
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    background-color: #424242;
+    margin-left: 15px;
+    /*    提高层级 盖住阴影*/
+    position: relative;
+    z-index: 1000;
+}
+
+
+/*开启相对定位，使得.cart-info相对于.cat-bar定位*/
+.cart-bar {
+    position: relative;
+}
+
+.cart-bar .cart-info {
+    /*   设置购物车的下拉框 */
+    position: absolute;
+    width: 316px;
+    height: 0;
+    overflow: hidden;
+
+    text-align: center;
+    line-height: 100px;
+
+    background-color: white;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    right: 0;
+
+    z-index: 999;
+
+    transition: all 0.3s
+}
+
+/*鼠标移入显示购物车的详情*/
+.cart-bar:hover .cart-info {
+    height: 100px;
+}
+
+
+/*头部框*/
+.header-wrapper {
+ 
+    width: 100%;
+   
+    height: 100px;
+
+    background-color: white;
+
+}
+
+/*设置头部的样式*/
+.header{
+    height: 100px;
+    position: relative;
+/*    background-color: aqua;*/
+}
+
+/*设置logo的样式*/
+.header .logo{
+    float: left;
+    margin-top: 22px;
+    
+}
+
+/*设置logo 中链接的样式*/
+.logo a{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-color:  #ff6700;
+/*    隐藏文字*/
+    text-indent: -99999px;
+/*    设置背景图*/
+    background-image: url("../img/mi-logo.png");
+}
+
+
+
+/*设置头部导航*/
+.header-nav {
+    width: 850px;
+    height: 100px;
+    line-height: 100px;
+/*    background-color: #bfa;*/
+    float: left;
+
+    margin-left: 65px;
+}
+
+
+/*设置头部导航li*/
+.header-nav >.nav> li{
+    float: left;
+    font-size: 16px;
+    margin-left: 20px;   
+    
+}
+
+/*设置头部导航链接样式*/
+.header-nav li a{
+    color: #333;
+    text-decoration: none;
+}
+/*设置鼠标移入方式*/
+.header-nav li a:hover{
+    color: #ff6700;
+}
+
+
+/*左侧导航条*/
+.left-nav{
+/*    开启绝对定位*/
+    position: absolute;
+    width: 234px;
+    height: 440px;
+    
+    padding-top: 20px;
+/*    padding-bottom: 20px;*/
+    background-color: rgba(0,0,0,0.6);
+    
+    top: 100px;
+    left: 0;
+}
+
+/*设置li的样式*/
+.left-nav li{
+/*    float: left;*/
+    height: 42px;
+    line-height: 42px;
+/*    background-color: aqua;*/
+}
+
+/*设置超链接的样式*/
+.left-nav li a{
+    display: block;
+    height: 42px;
+    color: white;
+    font-size: 14px;
+    padding-left: 20px;
+    
+}
+.left-nav li a::after{
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+    float: right;
+    margin-right: 30px;
+    font-size: 20px;
+    
+}
+
+/*设置左侧导航条鼠标移入效果*/
+.left-nav li a:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+
+
+

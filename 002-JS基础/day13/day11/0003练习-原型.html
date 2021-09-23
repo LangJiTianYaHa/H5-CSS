@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script type="text/javascript">
+			
+			
+			/*函数以构造函数的形式调用时，它所创建的对象中都会有一个隐含的属性，
+			    指向该构造函数的原型对象，我们可以通过__proto__来访问该属性
+			  
+			*/
+			//构造函数
+			function MyClass(){
+				
+			}
+			
+			//实例化
+			var mc1 = new MyClass();
+			var mc2 = new MyClass();
+			var mc3 = new MyClass();
+			
+//			console.log(MyClass.prototype);
+//			console.log(mc2.__proto__ == MyClass.prototype);
+			
+			//向MyClass的原型中添加属性a
+			MyClass.prototype.a = "我是属性a";
+			//向MyClass的原型中添加方法sayHello
+			MyClass.prototype.sayHello = function(){
+				alert("我是原型添加的方法！！！");
+			}
+			
+			/*console.log(mc1.a);			
+			console.log(mc3.a);			
+			mc2.sayHello();	*/
+			
+			//向mc1中添加a属性
+			mc1.a = "我是mc1中的a";
+			console.log(mc1.a);			
+//			console.log(mc2.a);			
+			
+			
+			
+		</script>
+		
+		
+	</head>
+	<body>
+	</body>
+</html>

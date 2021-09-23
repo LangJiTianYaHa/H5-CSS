@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习003-层级</title>
+    
+    
+    <style>
+        .box1 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(187, 255, 170);
+            position: relative;
+            z-index: 1;
+            
+            
+
+
+        }
+
+        .box2 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(62, 212, 166);
+
+            position: relative;
+            left: 100px;
+            bottom: 100px;
+            z-index: 10;
+            
+
+
+        }
+
+        .box3 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(18, 232, 51);
+            position: relative;
+            left: 200px;
+            bottom: 200px;
+            z-index:100;
+            opacity:0.2;
+        }
+
+    </style>
+    
+</head>
+<body>
+   
+   <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">
+        <img src="an.jpg" alt="">
+    </div>
+
+    
+</body>
+</html>

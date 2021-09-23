@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			
+			
+			
+			//使用字面量创建数组
+			var arr1 = [2,3,6,33,8,9];
+			//使用构造函数创建数组
+			var arr2 = new Array(2,6,8,4,0,1);
+			/*console.log(arr1);
+			console.log(arr1[3]);
+			console.log(arr2);
+			console.log(arr2[2]);*/
+			//创建一个数组数组中只有一个元素10
+			arr1[10];	
+//			console.log(arr1);
+			
+			//创建一个长度为10的数组
+			
+			arr2 = new Array(10);
+//			console.log(arr2);
+			
+			
+			
+			//数组中的元素可以是任意的数据类型
+			arr1 = ["hello",true,null,undefined];
+			/*console.log(arr1);
+			console.log(arr1[2]);*/
+			
+			//也可以是对象
+			var obj = {name:"孙悟空"};
+			arr1[arr1.length] = obj;
+			/*console.log(arr1);
+			console.log(arr1[4].name);*/
+			
+			arr1 = [{name:"孙悟空"},{name:"沙和尚"},{name:"猪八戒"}];
+			/*console.log(arr1);
+			console.log(arr1[2]);
+			console.log(arr1[2].name);*/
+			
+			//也可以是一个函数
+			
+			arr1 = [function(){alert(1)}, function() {alert(2)}];
+//			console.log(arr1[1]());	 //调用函数
+
+			//数组中也可以放数组，如下这种数组我们称为二维数组
+			arr1 = [[20,31,54,96],[20,33,10,20,58],[11,26,98,41]];
+			/*console.log(arr1);
+			console.log(arr1[1]);*/
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

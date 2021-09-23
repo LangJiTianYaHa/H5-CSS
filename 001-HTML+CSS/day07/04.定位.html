@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+        
+        
+        .box2{
+            width: 50%;
+            height: 200px;
+            background-color: #ff0;
+            /*    
+                将position设置absolute则开启元素的绝对定位
+                绝对定位的特点：
+                    1.绝对定位为会使元素完全脱离文档流
+                    2.绝对定位会改变元素的性质，行内变块，块宽高被内容撑开。
+                    3.开启绝对定位后如果不设置偏移量，元素的位置不会发生变化
+                    4.绝对定位会相对于离它最近的开启了定位的祖先元素进行定位，
+                        如果所有的祖先元素都没有开启定位，则相对于HTML标签进行定位
+                        所以一般情况，我们为一个元素开启了绝对定位，会同时为它的父元素开启相对定位
+            
+                       绝对定位元素会相对于它的包含块进行定位。
+            
+                       包含块：
+                            对于绝对定位元素来说，包含块就是离它最近的开启了定位块元素，
+                            如果没有开启定位的祖先元素，则其包含块是网页中的初始包含块
+            
+                            html就是初始包含块
+                    5.绝对定位会使元素提升一个层级
+            */
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        
+        span{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+        }
+        
+        .box4{
+            width: 500px;
+            height: 500px;
+            background-color: indianred;
+/*            position: relative;*/
+        }
+        
+        .box5{
+            width: 300px;
+            height: 300px;
+            margin-left: 100px;
+            background-color: azure;
+                
+        }
+    </style>
+</head>
+<body>
+  
+<!--  <span>abc</span>-->
+   
+   <div class="box1"></div>
+   <div class="box4">
+       <div class="box5">
+           <div class="box2"></div>
+       </div>
+   </div>
+   
+   <div class="box3"></div>
+    
+</body>
+</html>

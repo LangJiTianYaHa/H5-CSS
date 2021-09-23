@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>练习009-京东导航条</title>
+    
+    <link rel="stylesheet" href="iconfont2/iconfont.css">
+
+    <style>
+        /*     清除默认样式*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*        清除默认项目符号*/
+        ul {
+            list-style: none;
+        }
+
+        /*        顶层top-bar块容器*/
+        .top-bar {
+            min-width: 1190px;
+            height: 30px;
+            border-bottom: 1px solid #ddd;
+            background-color: #e3e4e5;
+        }
+
+
+        /*        定宽*/
+        .w{
+            width: 1190px;
+            margin: 0 auto;
+        }
+
+        /*        内部的容器*/
+        .inner{
+            line-height: 30px;
+        }
+        
+        
+        
+        
+        
+        
+         /*        右侧的导航条*/
+        .shortcut {
+            float: right;
+        }
+
+        /*        设置菜单浮动*/
+        .shortcut li {
+            float: left;
+        }
+        
+/*        设置图标属性*/
+        .shortcut .iconfont{
+            font-size: 12px;
+            color: #999;
+        }
+        
+/*        左侧左浮*/
+        .city{
+            float: left;
+        }
+/*        a标签属性设置*/
+        .top-bar a {
+            font: 12px/1.5 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', '\5B8B\4F53', sans-serif;
+            color: #999;
+            text-decoration: none;
+        }
+        
+/*        竖线的属性设置*/
+        .line{
+            float: left;
+            width: 1px;
+            height: 8px;
+            background-color: #999;
+            margin: 12px 12px 0;
+            
+        }
+        
+/*        免费注册的属性设置*/
+        .free{
+            margin-left: 10px;
+        }
+        .free a
+        {
+            color: #f00;
+        }
+/*        企业采购属性*/
+        .com a{
+            color: #f00;
+        }
+        
+/*        鼠标移入效果*/
+        .shortcut a:hover{
+            color: #e33333;
+        }
+        
+        
+/*        设置下拉框*/
+        .city .down{
+            width: 200px;
+            height: 300px;
+            border: 1px solid rgb(204, 204, 204);
+            box-shadow: 1px 2px 1px rgba(0,0,0,0.1);
+            display: none;
+            top: 30px;
+/*            绝对定位*/
+            position: absolute;
+            
+            
+        }
+/*      up属性*/
+        .city .up{
+            padding: 0 10px 0 5px;
+            height: 30px;
+            position: relative;
+            border: 1px transparent solid;
+            border-bottom: none;
+            z-index: 40;
+            
+        }
+        
+/*        city 设置hover*/
+        .city:hover .down {
+            display: block;
+        }
+
+        .city:hover .up {
+            padding-bottom: 1px;
+            background-color: white;
+            border-color: rgb(204, 204, 204);
+        }
+
+        .city:hover .up a {
+            color: #f10215;
+        }
+        
+        
+
+
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="top-bar">
+
+        <div class="w inner">
+
+            <!--     右侧菜单-->
+            <ul class="shortcut">
+
+                <li><a href="#">你好,请登录</a></li>
+                
+                <li class="free"><a href="#">免费注册</a></li>
+                <span class="line"></span>
+                <li><a href="#">我的订单</a></li>
+                <span class="line"></span>
+                <li><a href="#">我的京东</a>
+                    <i class="iconfont">&#xe615;</i>
+                    
+                </li>
+                
+                <span class="line"></span>
+                <li><a href="#">京东会员</a></li>
+                <span class="line"></span>
+                <li class="com"><a href="#">企业采购</a>
+                    <i class="iconfont">&#xe615;</i></li>
+                <span class="line"></span>
+                <li><a href="#">客户服务</a>
+                    <i class="iconfont">&#xe615;</i></li>
+                <span class="line"></span>
+                <li><a href="#">网站导航</a>
+                    <i class="iconfont">&#xe615;</i></li>
+                <span class="line"></span>
+                <li><a href="#">手机京东</a></li>
+            </ul>
+
+            <!--           左侧菜单-->
+            <ul class="city">
+                <li>
+                  <div class="up">
+                   <i class="iconfont">&#xe60f;</i>
+                    <a href="#">北京</a>
+                    </div>
+                    
+                    <div class="down"></div>
+                    
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body></html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关键帧</title>
+
+    <style>
+        /*animation: test1 500ms 400ms steps(6,end) infinite reverse;*/
+        /*!* 动画名 持续时间 延时 时间函数  执行次数 动画运行的方向*!*/
+        /*!*animation-timing-function*!*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1{
+            width: 500px;
+            margin: 0 auto;
+            height: 500px;
+            border-bottom: 2px solid black;
+            position: relative;
+        }
+
+        .box2 {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: brown;
+            animation: test2 500ms infinite alternate ;
+        }
+
+        .box2:nth-child(2){
+            left: 50px;
+            background-color: #6bb8fc;
+            animation-delay: 100ms;
+
+        }
+        .box2:nth-child(3){
+            left: 100px;
+            background-color:#a71d5d;
+            animation-delay: 150ms;
+
+        }
+        .box2:nth-child(4){
+            left: 150px;
+            background-color: #990055;
+            animation-delay: 200ms;
+
+        }
+        .box2:nth-child(5){
+            left: 200px;
+            background-color: #ff253a;
+            animation-delay: 250ms;
+
+        }
+        .box2:nth-child(6){
+            left: 250px;
+            background-color: #6bb8fc;
+            animation-delay: 300ms;
+
+        }
+
+        @keyframes test2 {
+            from{
+                top: 0;
+            }
+            to{
+                top:450px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+    </div>
+
+
+
+</body>
+</html>

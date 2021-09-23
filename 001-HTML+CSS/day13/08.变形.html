@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        html{
+            /*perspective 视距 ，设置人的眼睛和网页之间的距离*/
+            perspective: 800px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 100px auto 0;
+
+            /*
+                transform
+                    - 通过变形可以对元素进
+                        平移、旋转，放大、缩小 等操作
+
+                 translateX() 沿x轴方向平移
+                 translateY() 沿y轴方向平移
+                    - 可以使用百分比的值，这个值是相对于自己的宽度和高度计算
+                 translateZ() 沿z轴方向平移
+            */
+
+            transition: all 1s;
+            /*transform: rotateX(45deg) ;*/
+        }
+
+        .box1:hover{
+            /*水平平移*/
+            /*transform: translateX(-100px);*/
+            /*transform: translateY(100px);*/
+            /*!*垂直平移*!*/
+            /*transform: translateY(50%);*/
+
+            /*!*z轴的移动，元素距离用户的距离*!*/
+            /*transform: translateZ(300px);*/
+
+            /*!*沿x轴旋转*!*/
+            /*transform: rotateX(45deg) translateZ(100px);*/
+            /*transform: rotateX(360deg);*/
+
+            /*transform: rotateY(90deg);*/
+            /*transform: rotateZ(360deg);*/
+
+            /*transform: translateX(100px) rotateZ(45deg);*/
+            /*transform: rotateZ(45deg) translateX(100px) ;*/
+            transform:rotateZ(45deg) translateX(100px);
+        }
+        
+        /*.box2{*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    background-color: #ff0;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    bottom: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+
+        .box2{
+            position: absolute;
+            background-color: #ff0;
+            left: 50%;
+            top:50%;
+            transform: translateX(-50%) translateY(-50%);
+            transform: translate(-50%,-50%);
+        }
+        
+        .box3{
+            height: 100px;
+            background-color: #ff0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box1"></div>
+<div class="box3"></div>
+
+<!--<div class="box2">aaaaaaaaaaaaaaaaaaaaaaa</div>-->
+
+</body>
+</html>

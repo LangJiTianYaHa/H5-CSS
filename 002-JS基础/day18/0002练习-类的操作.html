@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>类的操作</title>
+		
+		<style type="text/css">
+			/*#box{
+				width: 100px;
+				height: 100px;
+				background-color: #BBFFAA;
+			}*/
+			
+			.b1{
+				width: 100px;
+				height: 100px;
+				background-color: #BBFFAA;
+			}
+			
+			.b2{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			
+		</style>
+		
+		<script type="text/javascript">
+			
+			window.onload = function(){
+				
+				//获取btn01
+				var  btn01 = document.getElementById("btn01");
+				//获取box
+				var  box = document.getElementById("box");
+			
+				//为btn01设置单击响应函数
+				btn01.onclick = function(){
+					/*box.style.width = "200px";
+					box.style.height = "300px";
+					box.style.backgroundColor = "red";*/
+					
+					/*box.className += "b2";*/
+					/*addClass(box,"b2");*/
+					
+				/*	removeClass(box ,"b2");*/
+				
+				toggleClass(box,"b2");
+					
+					
+				
+				
+				};
+				
+			
+			};
+			
+			/*
+			 
+			 obj要添加 class属性的元素
+			 cn要添加的class值
+			 * 
+			 * */
+			function addClass(obj , cn){
+				
+				//检查obj中是否含有cn
+				if(!hasClass(obj , cn)){
+					obj.className += " "+cn;
+				}
+				
+			}
+			
+			
+			function hasClass(obj ,cn){
+				var reg = new RegExp("\\b"+cn+"\\b");
+				return  reg.test(obj.className);
+				
+			}
+			
+			
+			function removeClass(obj ,cn){
+				var reg = new RegExp("\\b"+cn+"\\b");
+				obj.className = obj.className.replace(reg,"")
+			}
+			
+			
+			/*
+			 
+			 toggleClass可以切换一个类
+			 
+			 如果元素中具有类  则删除
+			 如果元素中没有类 则添加
+			 
+			 * */
+			
+			function toggleClass(obj ,cn){
+				if(hasClass(obj , cn)){
+					removeClass(obj ,cn);
+				}else{
+					addClass(obj , cn);
+				}
+			}
+			
+			
+		</script>
+		
+		
+	</head>
+	<body>
+		
+		
+		<button id = "btn01">点击修改box的样式</button>
+		
+		<br /><br />
+		
+		<div id="box" class="b1 b2"></div>
+		
+		
+	</body>
+</html>

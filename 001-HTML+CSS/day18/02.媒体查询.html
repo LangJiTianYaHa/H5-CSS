@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--
+    媒体类型：
+        all 所有设备
+        screen 屏幕
+        print 打印
+        speech 阅读器
+
+-->
+    <style>
+
+
+            /*媒体查询 （media query）*/
+            /*希望窗口大的时候，背景颜色是绿色*/
+            /*窗口小的时候，背景颜色的黄色*/
+            /*- 通过媒体查询我们可以为不通的设备，不通的屏幕大小设置不同的样式*/
+
+
+
+
+
+        /*@media all {*/
+        /*    它里边的样式会应用到所有的设备上*/
+
+        /*@media print {*/
+        /* 它里边的样式会应用到打印样式上 */
+
+
+
+        /*@media screen {*/
+            /*它里边的样式会应用到屏幕上*/
+
+        /*@media speech {*/
+            /*它里边的样式会应用到阅读器*/
+
+        /*    body{*/
+        /*        background-color: #ff0;*/
+        /*    }*/
+
+        /*}*/
+
+
+        /*
+            ,表示或者
+        */
+        /*@media print, screen {*/
+        /*@media all {*/
+
+        /*    body{*/
+        /*        background-color: #bfa;*/
+        /*    }*/
+        /*}*/
+
+        /*
+            一般媒体查询都会以only screen开头
+                screen 表示仅仅对显示屏应用该样式
+                only主要用于解决兼容性的问题
+        */
+
+
+            @media only screen and (min-width: 600px) {
+            
+                body{
+                    background-color: #ff0;
+                }
+            }
+            
+            @media only screen and (min-width: 800px) {
+            
+                body{
+                    background-color: #bfa;
+                }
+            }
+
+
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>

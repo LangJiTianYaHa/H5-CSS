@@ -1,0 +1,23 @@
+{
+  "id": "2121775",
+  "name": "京东top-bar",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1297609",
+      "name": "35_向下箭头",
+      "font_class": "35_xiangxiajiantou",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1638205",
+      "name": "位置",
+      "font_class": "weizhi",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script type="text/javascript">
+			
+			window.onload = function(){
+				
+				
+				document.onkeydown = function(event){
+					event = event || window.event;
+					
+					/*
+					 * 可以通过keyCode来获取按键的编码
+					 * 	通过它可以判断哪个按键被按下
+					 * 除了keyCode，事件对象中还提供了几个属性
+					 1* 	altKey
+					 * 	ctrlKey
+					 * 	shiftKey
+					 * 		- 这个三个用来判断alt ctrl 和 shift是否被按下
+					 * 			如果按下则返回true，否则返回false
+					 */
+					
+					//console.log(event.keyCode);
+					
+					//判断一个y是否被按下
+					//判断y和ctrl是否同时被按下
+					if(event.keyCode === 89 && event.ctrlKey){
+						console.log("ctrl和y都被按下了");
+					}
+					
+//					console.log(event.keyCode);
+					
+					
+					
+				};
+				
+				
+				
+				//使文本框中不能输入数字
+				//获取input
+				var input = document.getElementsByTagName("input")[0];  //获取第一个文本框
+				input.onkeydown = function(event){
+					event = event || window.event;
+					/*console.log(event.keyCode);*/
+					if(event.keyCode >=48 && event.keyCode <=57){
+						return false;
+					}
+					
+					
+				};
+				
+			};
+			
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		
+		<input type="text" name="" id="" value="" />
+	</body>
+</html>

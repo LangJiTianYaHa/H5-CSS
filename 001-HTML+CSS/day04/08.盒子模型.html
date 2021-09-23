@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+/*            
+                默认情况下，width和height指定的是元素的内容区的大小
+            */
+            width: 100px;
+            height: 100px;
+            
+/*            
+                边框，是盒子的边界，出了边框就是盒子外部的
+                边框相关的三个样式
+                    border-color 边框的颜色
+                    border-style 边框的样式
+                    border-width 边框的宽度
+            
+                边框会影响到盒子的可见框大小
+            */
+/*            
+            border-width表示边框的宽度
+                - 可以通过该属性分别制定边框四个方向的宽度
+                    border-width: 10px 20px 30px 40px;
+                        如果我们指定了四个宽度，则会分别设置上右下左四个方向的边框的宽度
+            
+                    border-width: 10px 20px 30px;
+                        三个值：上 左右 下
+            
+                    border-width: 10px 20px;
+                        两个值：上下 左右
+            
+                    border-width: 10px;
+                        一个值：上下左右
+
+
+            
+*/
+            border-width: 10px;
+            
+/*            border-color边框的颜色，可以分别指定四个边的颜色
+                规则和border-width一样
+            */
+/*            border-color: red orange blue aqua;*/
+            border-color: silver;
+            
+            
+            /*
+                border-style 指定边框的样式
+                    solid 实线
+                    dotted 点状虚线
+                    dashed 虚线
+                    double 双线
+                    
+            */
+            border-style: solid dotted dashed double;
+            border-style: solid dotted dashed ;
+            border-style: solid dotted;
+            border-style: solid ;
+                
+            background-color: #bfa;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<!--   
+    盒子模型（框模型 box model）  
+        - 浏览器在渲染页面时，它会将页面中的每一个元素都想象成是一个矩形的盒子。
+        - 想象成盒子以后，对于页面的布局就变成了如何摆放盒子
+        - 每一个盒子从内到外都有以下几个部分组成
+            内容区（content）
+                内容区决定这个盒子能装多少东西（子元素） 
+            内边距（padding）
+                内容区和边框之间的距离
+            边框（border）
+                盒子的边框
+            外边距（margin）
+                盒子距离其他盒子的距离
+-->
+    
+</body>
+</html>

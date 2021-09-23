@@ -1,0 +1,21 @@
+.box1 {
+  width: 100px;
+  height: 20px;
+}
+.box1 .box2 {
+  background-color: red;
+  padding-right: 2px;
+}
+.box1 .box2 .box3 {
+  border-radius: 50%;
+  padding-left: 1px;
+}
+ul,
+.box4,
+.box3 {
+  background-color: #bfa;
+}
+ul > li {
+  float: left;
+}
+/*# sourceMappingURL=demo003.css.map */

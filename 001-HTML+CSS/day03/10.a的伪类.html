@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        a:link{
+            color: green;
+            font-size: 50px;
+        }
+        
+        a:visited{
+            color: red;
+/*            
+                由于隐私的原因，visited这个伪类
+                只能修改字体的颜色，其余样式都不能修改
+            */
+/*            font-size: 20px;*/
+        }
+        
+        a:hover{
+            color: yellow;
+        }
+        
+        a:active{
+            color: deepskyblue;
+        }
+        
+    </style>
+</head>
+<body>
+<!--  
+      :link
+          - 正常的超链接（带有href的a标签）
+          - 主要用来设置没有访问的链接的样式
+      :visited
+          - 访问过的超链接（只能修改字体的颜色）
+      :hover
+          - 鼠标移入的状态（不仅仅适用于超链接）
+      :active
+          - 鼠标正在点击的状态（不仅仅适用于超链接）
+  -->
+   
+   <a href="https://www.baidu.com">访问过的</a>
+   
+   <br><br>
+   <a href="https://www.baidu123.com">没访问过的</a>
+    
+</body>
+</html>

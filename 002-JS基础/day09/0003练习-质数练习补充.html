@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script type="text/javascript">
+//			 2.打印出1-100之间所有的质数
+
+
+
+			
+//			var num = prompt("请输入一个大于1的整数:");
+			
+		//打印出 2-100所有的值
+			for(i =2;i<=100;i++){
+				
+//				console.log(i);
+
+		//判断 j值得合法性
+				var flag = true;
+				
+				for(j = 2;j<i; j++){
+					if(i%j==0){
+						flag=false;
+						
+					}
+					
+				}
+				
+				//如果是质数 打印i的值
+				
+				if(flag){
+					console.log(i);
+				}
+		
+		
+		
+			}
+		
+	
+			
+			
+			
+			
+			
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

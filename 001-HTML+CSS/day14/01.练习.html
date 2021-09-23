@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01.练习</title>
+    
+    <style>
+        
+/*
+        .outer{
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+        
+        .outer>div{
+            position: absolute;
+            transition: 2s all;
+
+            backface-visibility: hidden;
+        }
+        
+        
+        
+        .back{
+            width: 400px;
+            height: 400px;
+            background-color: #333;
+            font-size: 40px;
+            color: #fff;
+            
+            text-align: center;
+            line-height: 400px;
+            
+            transform: rotateY(180deg);
+        }
+        .front{
+            z-index: 2;
+        }
+    
+        
+        .outer:hover .front{
+            transform: rotateY(180deg);
+        }
+        
+        .outer:hover .back{
+            transform: rotateY(0);
+        }
+        
+*/
+        
+        .outer{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            
+            
+        }
+        
+        .outer>div{
+            position: absolute;
+            transition: 2s all;
+/*            隐藏背面内容      */
+            backface-visibility: hidden;
+        }
+        
+        .back{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            font-size: 50px;
+            text-align: center;
+            line-height: 400px;
+            
+            transform: rotateY(180deg);
+            
+            
+            
+                
+        }
+        
+        .front{
+            z-index: 5;
+        }
+        
+        .outer:hover .front{
+            transform: rotateY(180deg);
+            
+        }
+        
+        .outer:hover .back{
+            transform: rotateY(0);
+        }
+        
+        
+        
+    </style>
+    
+</head>
+<body>
+   <div class="outer">
+       <div class="front">
+           <img src="img/1.jpg"  width="400px" alt="">
+       </div>
+       
+       
+       <div class="back">
+           这是一个女人
+       </div>
+   </div>
+    
+</body>
+</html>

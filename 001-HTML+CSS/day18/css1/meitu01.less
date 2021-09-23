@@ -1,0 +1,136 @@
+//统一设置超链接a 的样式
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity .4s;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.top-bar-wrapper {
+  background-color: #000;
+}
+
+//设置top-bar的样式
+.top-bar {
+  //设置最大宽度并居中
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+//设置左侧菜单
+.menu-wrapper {
+  .menu-btn {
+
+    &:hover {
+      opacity: 1;
+
+    }
+  }
+
+  //设置下拉菜单
+  .left-menu {
+    //隐藏菜单
+    display: none;
+    position: absolute;
+    top: 48px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 44px;
+    background-color: #000000;
+  }
+
+  li {
+
+    display: flex;
+    margin: 0 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+  }
+
+  a {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+
+  }
+
+  span {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: white;
+    margin-left: 20px;
+
+  }
+}
+
+//鼠标移动至菜单栏显示隐藏内容   +紧随其后的兄弟元素  ~紧随其后的所有兄弟元素
+.top-bar .menu-btn:hover + .left-menu {
+  display: block;
+}
+
+//设置logo 部分
+.logo-wrapper {
+  .logo {
+
+    a {
+      //隐藏文字
+      display: block;
+      text-indent: -99999px;
+      width: 120px;
+      height: 30px;
+      background-image: url("../img/dff63979.sprites-index@2x.png");
+      background-size: 400px 400px;
+    }
+  }
+
+}
+//设置媒体查询
+@media only screen and (min-width: 768px) {
+  .menu-wrapper {
+    //设置弹性容器  增长系数
+    flex: 1 1 auto;
+    order: 2;
+    //隐藏菜单按钮
+    .menu-btn {
+      display: none;
+
+    }
+    //显示隐藏的菜单
+    .left-menu {
+
+      position: static;
+
+      display: flex;
+      padding: 0;
+
+      justify-content: space-evenly;
+      //取消定位
+      li {
+        margin: 0;
+
+        span {
+          display: none;
+        }
+      }
+
+    }
+  }
+
+  .logo-wrapper {
+    order: 1;
+  }
+
+  .user-wrapper {
+    order: 3;
+  }
+
+}

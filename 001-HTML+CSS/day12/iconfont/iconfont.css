@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1564966804426'); /* IE9 */
+  src: url('iconfont.eot?t=1564966804426#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOUAAsAAAAAB8QAAANGAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDKgqCUIIwATYCJAMUCwwABCAFhG0HYhvOBsguIScbT4RA6w4FEQh5KOwMC74piYenNdr7M7N7KohqE8vmli5BIxVtlICHglfy/jX39lIg3GltWTIohMDbAM5mU1TAuqxqyxruTph/3x2RMOSxBwDTEKa5GtLbBo6d9rQzWi/onY7evNHYZfwKO7v+gH3i3vFviM9nWTnMMc7/RQEm1AU01qZPViCJesP0kgbq4mkC7SaqIGzcPDgCcQp3UiAunFVFiKtYlYHG0CrUHSuLeClaaxpJL/Ei+X78tTRGUmXuWVtOdSnQ+iMsjKzJTF63vp0bbB0Z84FCnOv0nhCZZeeL1G7Ko6wGWr3+iR9Jj4X/GzaVY6mbDq3a8R8eWZEEUYNCnWCtXOFHBHwyP5K0S9cDNZq6hVB+H/UVaM9qdgHPufrpiScJb6/uzv7+vLU3X8ZefRp5vVPA08LbI5XQ26/jr6mouYtMj+05onriV5NyOMn2xVCfRQke6RlpJbfFHOiliEf+jGj6SXRD1PXfRt5/h4P08A72Tc7thcJXRSeQ9O/p7RRm9gld0XlgupOIkFqAokY/+Pa6j4WnXZaHVrk7fZx2XhbeNRaaHvLvcerj91flKix7ZFp69QLuE0Kh6elNO1nBWHr93rX0iTsoKrk+2e1XpBeWAZrKbYD8PE2ARs7KJf5/nv6i3/jY/oP51Mb/6yjg+8WLBcONAtN08J5lk2U/pFMRoHCFW10VlOhWBm7B2I3dwJ94/4ofUaTfl22MQ7eZD62GCiQtJrizVksGicKcj0qH5ai1WoN28/Ss7zCAiRSlDXNtA4Re90i6fUDWK0wU5mdUhn1HrTeg3a7I3LHDzHh7xzUUOSpEWiG67DrUd/CEtHEI1cASWVmRsMaQ+XqC1FbV1As96CDbYo6/qNZxTgllrk26wXloWS7xmGugzKs0zr366mraRVGV7NqQYAMGiTikICQrCJ3M5aBRey6h8fkhSBWwiNgAqREcgxif3j1Rq0rNBKJH60wivco7vkWqOhxHERTjshHdwI0sL+sivO5hBiTjqmgL0p561agVnaqtOl5vP0AJa8K9oYoUOUpUUatvn9RXNT1p+axoiUbY2+FukOVroqPKWkAl91JdSQMJnfi8gqPPAQAAAA==') format('woff2'),
+  url('iconfont.woff?t=1564966804426') format('woff'),
+  url('iconfont.ttf?t=1564966804426') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1564966804426#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-weizhi:before {
+  content: "\e62e";
+}
+
+.icon-xialajiantou:before {
+  content: "\e60f";
+}
+
+.icon-shangchuanicon-fuben:before {
+  content: "\e601";
+}
+
+.icon-icon-test:before {
+  content: "\e602";
+}
+

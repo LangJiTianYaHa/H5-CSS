@@ -1,0 +1,62 @@
+/*
+ 这是原版的CSS的注释，它里边的内容，会被编译到CSS文件中
+*/
+
+//这是一个注释 less中的单行注释，注释中的内容不会被编译到css文件中
+//在webstorm中，每次对less进行编译后，都会自动生成一个xxx.css.map文件
+// 该文件的作用就是，将css文件和less文件进行管理，使我们可以直接对less文件进行调试
+body{
+  // darken() 函数，用于加深颜色
+  //   参数：
+  //    第一个参数颜色， 第二个参数百分度
+  //background-color: darken(#bfa, 20%);
+  background-color: #bfa;
+  //background-color: darken(#bfa,30%);
+}
+
+//使用 @ 符来定义变量
+@a:20px;
+@w:100px;
+@red:#f10000;
+// 驼峰命名法，变量名的首字母小写，每一个单词的开头字母大写，其余字母小写
+// maxwidth  maxWidth
+@className:box2;
+
+
+//可以将变量的值的作为选择器使用
+// @{变量名}
+.@{className}{
+  width: 100px;
+  background-image: url("@{className}/img/1.png");
+}
+
+.box1{
+
+  @a:40px;
+
+  width: 300 + 500px;//使用值时，可以直接进行计算
+  Width: 300 * 2px; //+表示加法 -减法 *乘法 /除法
+  width: 1600 / 40px;
+
+  //$样式名 可以直接引用其他属性的值
+  height: $width * .2;
+
+  //使用变量
+  //使用变量时，依据就近原则
+  border-width: @a;
+
+  @a:50px;
+  .box3{
+    //每一个{}都是一个独立的作用域
+    //我们使用变量时，会先在当前的{}中寻找，如果找到则直接使用
+    // 如果没有则去上一级的{}中寻找，找到则使用
+    // 如果没有继续去上一级寻找，直到找到为止，如果一直到最外层依然没有则报错（无法编译）
+    width: @a;
+  }
+}
+
+.box4{
+  @a:w;
+  width: @@a; //@w
+}
+

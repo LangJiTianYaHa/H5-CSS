@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            height: 271px;
+            /*
+                calc() 用来帮助我们计算
+            */
+            width: calc(528px / 4);
+
+            margin: 0 auto;
+
+            /*设置背景图片*/
+            background-image: url("img/bigtap-mitu-queue-big.png");
+
+        /*    指定位置*/
+            background-position: 0 0;
+
+        /*    设置过渡*/
+            transition: background-position 500ms steps(3, start);
+
+        }
+
+
+        .box1:hover{
+            background-position: -396px 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="box1"></div>
+
+
+<!--<div class="box2"></div>-->
+
+<!--<div class="box3"></div>-->
+<!--<div class="box4"></div>-->
+<!--<div class="box5"></div>-->
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习4</title>
+
+    <style>
+/*
+        div p:first-child {
+            color: aqua;
+        }
+        
+        div p:first-of-type{
+            color: blue
+        }
+        
+*/
+/*
+        
+        p:last-child{
+            color: aqua;
+        }
+        
+*/
+/*
+        p:last-of-type{
+            color: aqua;
+        }
+        
+*/
+/*
+        p:nth-child(2n+1){
+            color: aquamarine;
+        }
+        
+        
+*/
+/*
+        p:nth-of-type(n){
+            color: aqua
+        }
+        
+        
+        
+        
+*/
+/*
+        p:only-child{
+            color: aqua;
+        }
+        p:only-of-type{
+            color: aquamarine;
+        }
+        
+        
+*/
+        .box1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        
+        .box2{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        div:empty{
+            background-color: red
+        }
+        
+        p:not(.p1){
+            color: cornflowerblue;
+        }
+        
+        
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+    <div>
+        <span></span>
+        <p>我是第一个p元素</p>
+        <p>我是第二个p元素</p>
+        <p class='p1'>我是第三个p元素</p>
+        <p>我是第四个p元素</p>
+        <p>我是第五个p元素</p>
+        <p>我是第六个p元素</p>
+        <p>我是第七个p元素</p>
+        <p>我是第八个p元素</p>
+        <p>我是第九个p元素</p>
+        <p>我是第十个p元素</p>
+    </div>
+
+    <div>
+        <p>我是下边div中的p元素</p>
+        <span></span>
+    </div>
+
+    <div class='box1'>
+        <p>p元素</p>
+    </div>
+    <div class='box2'></div>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            -webkit-transform: rotateZ(45deg);
+        }
+
+        /*
+            https://caniuse.com/
+         */
+        ::-webkit-input-placeholder{
+            color: red;
+        }
+        ::-moz-placeholder{
+            color: red;
+        }
+        :-ms-input-placeholder{
+            color: red;
+        }
+        ::-ms-input-placeholder{
+            color: red;
+        }
+        ::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--
+    CSS前缀
+        - 一些浏览有时会在浏览器中添加一些尚未成为标准的属性
+            为了避免这些属性不会和将来的标准产生冲突，所以浏览器一般会为这些非标准的属性添加浏览器的前缀
+            -moz- 火狐
+            -webkit- chrome
+            -ms- 微软
+            ...
+
+        - 使用postcss来辅助我们添加CSS的前缀
+            安装postcss-cli
+                cnpm i -g postcss-cli
+
+        - autoprefixer 是 postcss中的插件，专门用来为css添加前缀
+
+                cnpm i -g autoprefixer
+
+                postcss 源文件.css -u autoprefixer -o 目标文件.css
+
+        - caniuse.com 查询css属性的兼容性
+        - https://github.com/postcss/postcss-cli
+        - https://github.com/postcss/autoprefixer#cli
+-->
+
+<input type="text" placeholder="这是一个文本框">
+
+</body>
+</html>

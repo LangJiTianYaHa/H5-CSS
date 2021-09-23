@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图练习</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .outer {
+            width: 794px;
+            height: 476px;
+            position: relative;
+            margin: 50px 0;
+        }
+
+        .img-list li {
+            position: absolute;
+
+        }
+
+        /*        设置导航条的大小*/
+
+        .pointer a {
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            float: left;
+            margin: 0 5px;
+            background-color: aquamarine;
+        }
+
+        /*        开启绝对定位*/
+        .pointer {
+            width: 208px;
+            position: absolute;
+            margin: 0 auto;
+            top: 300px;
+            left: 0;
+            right: 0;
+            z-index: 999;
+
+        }
+
+        .pointer a:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer">
+        <ul class="img-list">
+            <li><a href="#"><img src="img/1.jpg"></a></li>
+            <li><a href="#"><img src="img/2.jpg"></a></li>
+            <li><a href="#"><img src="img/3.jpg"></a></li>
+            <li><a href="#"><img src="img/4.jpg"></a></li>
+            <li><a href="#"><img src="img/5.jpg"></a></li>
+            <li><a href="#"><img src="img/6.jpg"></a></li>
+            <li><a href="#"><img src="img/7.jpg"></a></li>
+            <li><a href="#"><img src="img/8.jpg"></a></li>
+        </ul>
+
+        <div class="pointer">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+
+
+        </div>
+
+
+
+    </div>
+
+</body></html>

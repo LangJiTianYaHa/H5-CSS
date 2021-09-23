@@ -1,0 +1,8 @@
+name autoprefixer
+
+
+C:\Users\[用户名]\AppData\Roaming\npm\postcss
+
+-u autoprefixer -o $FileDir$\$FileName$ $FileDir$\$FileName$
+
+$ProjectFileDir$

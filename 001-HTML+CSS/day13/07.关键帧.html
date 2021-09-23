@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1{
+            width: 500px;
+            margin: 0 auto;
+            height: 500px;
+            border-bottom: 2px solid black;
+            position: relative;
+        }
+
+        .box2{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: brown;
+
+        /*    设置动画*/
+            animation: falldown 400ms infinite alternate;
+        }
+
+
+        @keyframes falldown {
+
+            /*from表示动画的开始位置 相当于 0%*/
+            /*0%, 50%,100%{*/
+            /*    top:0;*/
+            /*}*/
+
+            /*25%,75%{*/
+            /*    top:450px;*/
+            /*}*/
+
+            from{
+                top:0;
+            }
+
+            to{
+                top: 450px;
+            }
+
+            /*to表示动画的结束位置，相当于100%*/
+
+
+
+        }
+
+        .box2:nth-child(2){
+            left: 50px;
+            background-color: red;
+            animation-delay: 0.1s;
+        }
+
+        .box2:nth-child(3){
+            left: 100px;
+            background-color: orange;
+            animation-delay: 0.2s;
+
+        }
+
+        .box2:nth-child(4){
+            left: 150px;
+            background-color: yellow;
+            animation-delay: 0.3s;
+
+        }
+
+        .box2:nth-child(5){
+            left: 200px;
+            background-color:skyblue;
+            animation-delay: 0.4s;
+
+        }
+
+        .box2:nth-child(6){
+            left: 250px;
+            background-color: greenyellow;
+            animation-delay: 0.5s;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="box1">
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+</div>
+
+
+</body>
+</html>

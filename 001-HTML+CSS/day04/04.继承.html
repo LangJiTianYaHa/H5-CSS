@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        q::before{
+            content: "「"
+        }
+        
+        q::after{
+            content: "」"
+        }
+        
+        p{
+            color: red;
+            font-size: 50px;
+            background-color: yellow;
+        }
+      
+    </style>
+</head>
+<body>
+  
+  <div style="width:100px; height: 100px; background-color: red;"></div>
+   
+<!--   鲁迅说：<q>我没说过这句话！</q>-->
+   
+<!--   
+       继承
+           - 就像生活中后代会继承祖先财产一样
+               在网页中后代元素也会继承到祖先元素上的样式
+           - 为祖先元素所设置样式，也会同时应用到其后代元素上
+           
+           - 继承的存在大大的简化了样式的编写
+               可以只为祖先元素设置样式，即可让所有后代元素都同时具有该样式
+           在开发中可以将一些公共的样式，统一设置到祖先元素上，这样即可让所有的元素都具有该样式
+           
+           - 并不是所有的样式都会被继承，比如背景相关的样式都不会继承，还有布局相关...
+   -->
+   
+   <p>hello我一个p元素<span>我是p<em>元素</em>中的span元素</span></p>
+    
+</body>
+</html>

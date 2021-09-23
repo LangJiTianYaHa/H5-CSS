@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+/*    
+        为所有的p元素，设置一个字体颜色为红色
+        
+        元素选择器
+            作用：根据标签名来选中指定的元素
+            语法：标签名
+            例子：p{} div{} span{}
+        
+        
+*/
+/*
+        h1{
+            color: green
+        }
+        
+        p{
+            color: red;
+        }
+*/
+        
+/*        
+    为第二行设置一个字体大小为50px 
+        id选择器
+            作用：根据元素的id属性值，选中一个元素
+            语法：#id
+        例子： #p1{}  #box{} 
+                
+*/
+/*
+        #p1{
+            font-size: 50px
+        }
+*/
+        
+/*        
+    为第三行，第四行，第五行设置一个背景颜色为黄色
+        选择器分组(并集选择器)：
+            作用：可以同时为多个选择器设置同样的样式
+            语法：选择器1, 选择器,...选择器N
+        例子：#p2, div, span {}
+*/
+/*
+        #p2, #p3, #p4{
+            background-color: yellow
+        }
+*/
+        
+/*
+        #p2{
+            background-color: yellow
+        }
+        
+        #p3{
+            background-color: yellow
+        }
+        
+        #p4{
+            background-color: yellow
+        }
+*/
+        
+        /*
+            类选择器
+                作用：根据元素的class属性选中元素
+                语法：.class
+        例子：.p1{} .box{}
+            */
+        
+        
+/*
+        .p5{
+            background-color: greenyellow
+        }
+        
+        .p6{
+            font-size: 40px
+        }
+*/
+        
+/*        
+            通配选择器
+                作用：选中页面中的所有元素
+                语法：*
+        */
+        
+        *{
+            color: red
+        }
+    
+    </style>
+</head>
+<body>
+   <h1>滕王阁序</h1>
+   <p>落霞与孤鹜齐飞，秋水共长天一色</p>
+   <p id="p1">落霞与孤鹜齐飞，秋水共长天一色</p>
+   <p id="p2">落霞与孤鹜齐飞，秋水共长天一色</p>
+   <p id="p3">落霞与孤鹜齐飞，秋水共长天一色</p>
+   <p id="p4">落霞与孤鹜齐飞，秋水共长天一色</p>
+   
+<!--   
+      除了id属性，也可以为元素添加一个class属性
+          class的作用的是为元素进行分类
+          拥有相同class属性的元素属于同一类元素
+      设置方式也和id基本一致，不同的是class属性可以重复使用
+          可以同时为一个元素设置多个class
+  -->
+   <p class="p5 p6 p7">落霞与孤鹜齐飞，秋水共长天一色</p>
+
+   <p class="p5">落霞与孤鹜齐飞，秋水共长天一色</p>
+   
+    
+    
+
+</body>
+</html>

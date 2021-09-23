@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<script type="text/javascript">
+			window.onload = function() {
+				//获取Img1
+
+				var Img1 = document.getElementById("Img1");
+				//创建数组存储图片
+
+				var arrImg = ["img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg"];
+
+				//创建索引
+				var index = 0;
+				//定义一个变量，用来保存定时器的标识
+				var timer;
+
+				//为btn01 绑定单击响应函数
+				var btn01 = document.getElementById("btn01");
+				btn01.onclick = function() {
+
+					clearInterval(timer);
+
+					//开启定时器
+					timer = setInterval(function() {
+						index++;
+
+						//判断
+
+						if(index >= arrImg.length) {
+							index = 0;
+						}
+
+						//修改图片路径
+						Img1.src = arrImg[index];
+
+					}, 1000);
+				};
+
+				////为btn01 绑定单击响应函数
+
+				var btn02 = document.getElementById("btn02");
+				btn02.onclick = function() {
+
+					clearInterval(timer);
+
+				};
+
+			};
+		</script>
+
+	</head>
+
+	<body>
+
+		<img id="Img1" src="img/1.jpg" />
+		<br /><br />
+		<button id="btn01">开始</button>
+		<button id="btn02">停止</button>
+
+	</body>
+
+</html>

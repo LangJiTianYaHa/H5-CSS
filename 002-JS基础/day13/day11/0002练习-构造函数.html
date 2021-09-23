@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script type="text/javascript">
+			
+			
+			//构造函数Person
+			function Person(name, age,gender){
+				
+				this.name = name;
+				this.age = age;
+				this.gender = gender;
+//				this.sayName = fun;
+				
+				
+			}
+			
+			/*function fun(){
+				alert("大家好，我是"+this.name);
+			}*/
+			
+			//向原型中添加sayName方法
+			Person.prototype.sayName = function(){
+				alert("大家好，我是"+this.name);
+				
+			}
+			
+			//实例化
+			var per1 = new Person("孙悟空",18,"男");
+			var per2 = new Person("猪八戒",19,"男");
+
+			per1.sayName();
+			console.log(per1);
+			per2.sayName();
+			console.log(per2);
+			
+			
+		</script>
+		
+		
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,617 @@
+*{
+	
+	margin:0px;
+	padding: 0px;
+}
+#top{
+	height: 30px;
+	background-color: #f4f4f4;
+	border-bottom:1px solid #f4f4f4;
+}
+.w{
+	width: 78%;
+	margin:0 auto;
+	color: #ddd;
+}
+a{
+	text-decoration: none;
+	color: #999;
+	font-size: 12px;
+}
+
+
+
+/*第一部分的框架*/
+.col1{
+	width: 100%;
+	display: block;
+	height: 30px;
+	color: #ddd;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #f4f4f4;
+}
+/*右边地址和通告*/
+.col1 a .sh.ll {
+	position: relative;
+	float: left;
+	display: block;
+	height: 30px;
+	position: 10px;
+	color: #666；
+}
+.icon-location{
+	color: #f00 !important;
+	font-size: 12px;	
+
+}
+.icon-volume-medium{
+	padding-left: 20px;
+	color: #f00 !important;
+	font-size: 12px;
+}
+/*左边的登录，注册等*/
+.zzz{
+	float: right;
+}
+.zzz i:hover{
+    color: red;
+}
+.zzz .jule:hover{
+    color: red;
+}
+.col1 .reg {
+	padding-left: 20px;
+}
+.col1 .huiyuan{
+	padding-left: 20px;
+}
+.zzz .reg:hover{
+    color: red;
+}
+.red{
+	color:  red;
+}
+.icon-users {
+	padding-left: 20px;
+	font-size: 12px;	
+}
+.icon-calendar{
+	padding-left: 10px;
+	font-size: 12px;	
+}
+
+
+
+/*第二部分的整体实现*/
+.col2{
+   display: block;
+   width: 100%;
+   margin-right: 0 auto;
+   height: 180px;
+ 
+   color: :rgb(255,255,255) ;
+}
+/*第一小部分：logo1的显示*/
+.col2 .co1 img{
+	position: absolute;
+	float: left;
+	width: 140px;
+	height: 140px;
+	margin-top: 1px;
+  
+}
+/*第二小部分：logo2的显示*/
+.col2 .co2 img{ 
+	-webkit-font-smoothing: antialiased;
+    padding-left: 140px;
+	width: 140px;
+	height: 140px;
+	margin-top: 1px;
+}
+/*第三小部分：导航条的显示*/
+.col2 .co3{
+	position: absolute;
+	left:540px;
+	top:100px;
+}
+.co3 input{
+	width: 450px;
+	height: 32px;
+	border:1px solid #e5e5e5;
+	outline: none;
+	float: left;	
+	font-size: 12px;
+	border-radius: 30px;
+}
+
+.co3 .icon-search{
+	position: absolute;
+    left: 390px;
+    top:5px;
+	height: 30px;
+	font-size: 20px;
+	height: 20px;
+	width: 20px;
+	color: #ddd;
+	
+}
+ .hotwords{
+ 	position: absolute;
+	left:540px;
+	top:140px;
+    width: 450px;
+	height: 32px;	
+	outline: none;
+	float: left;	
+	font-size: 14px;
+	margin-left:10px;
+	color: #aaa;
+}
+/*导航条下面文字的显示*/
+.col2 .co4{
+    position: absolute;
+    padding-right: 40px;
+    border:1px solid  #f4f4f4;
+    border-radius: 40px;
+    top:100px;
+    left:1000px;
+	width: 100px;
+	height: 32px;
+}
+.co4 .c1{
+	position: absolute;
+    text-align: center;
+	display: block;
+	width: 120px;
+	height: 20px;
+	overflow: hidden;
+	padding:9px 0 9px;
+	line-height: 18px;
+	font-size: 14px;
+}
+.c1 .shopping{
+	line-height: 18px;
+	font-size: 14px;
+}
+
+.co4{
+	position: absolute;
+	left: 230px;
+	top: 65px;
+	width: 450px;
+	height: 20px;
+}
+.col2 .icon-menu{
+   position: absolute;
+   width: 140px;
+   height:36px;
+   color: #fff;
+   font-size: 16px;
+   background-color: #ff4040;
+   cursor: pointer;
+}
+/*第五小部分：全部类目的显示*/
+.co5{
+	height: 100%;
+	width: 750px;
+	cursor: pointer;
+}
+.co5 .icon-menu .span{
+    position: relative;
+    top:10px;
+    left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+.icon-ctrl{
+	color: #fff;
+	font-size: 16px;
+}
+.co5 ul{
+	position: absolute;
+	width: 300px;
+	left:120px;
+    list-style: none;
+    font-size: 16px;
+    color: #333;
+    height: 100%;
+    padding-left:280px;
+    zoom:1;
+    margin:0px;
+    padding:0px;
+}
+.co5 ul li a{
+	float: left;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: -5px;
+   
+}
+.co5 ul li a:hover{
+	color: red;
+}
+/*二级菜单的显示*/
+#my_second{
+	position: absolute;
+	width: 1000px;
+	height: 280px;
+	border: 5px solid red;
+	top:30px;
+	left:0px;
+	display: none;
+	background:#ffffff;
+}
+.mid_col1{
+	font-size: 20px;
+	color: #000000;
+}
+.mid_col1 ul{
+    margin-top: 10px;
+   
+}
+.mid_col1 ul li{
+	height: 25px;
+	line-height: 25px;
+	color: #636363;
+	font-size: 14px;
+}
+.mid_col1 ul li a{
+	color: #333;
+	font-size: 14px;
+	margin:0px 2px;
+}
+.mid_col1 ul li:hover .pop{
+	display: block;
+}
+.mid_col1 ul li .pop{
+	position: absolute;
+	width:890px;
+	height: 500px; 
+	top: 0px;
+	display: none;
+}
+#my_first:hover #my_second{
+	display: block;
+	z-index: 120;
+}
+
+
+/*第三部分的图片*/
+.col3{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	margin:0 auto;
+	margin-bottom: 40px;
+ /*   overflow: hidden;*/
+   }
+.banner{
+	position:absolute;
+    top: 0px;
+    left: 0px;
+    z-index:3;
+    width: 100%;
+   /* width: 3*1070px;*/
+}
+.banner li{
+	position: relative;
+	width: 100%;
+}
+.banner img{
+	position: relative;
+	width: 100%;
+	height: 420px;
+
+}
+.button_single{
+	margin:0 auto;
+	height: 100px;
+	position: relative;
+	width: 1070px;
+	top:370px;
+	z-index: 100;
+	cursor: pointer;
+	list-style: none;
+	left:370px;
+
+}
+/*按钮的显示*/
+.cur{
+   margin-right: 10px;
+   display: inline-block;
+   width: 110px;
+   overflow: height;
+   height: 40px;
+   background:#fff;
+   text-align:center;
+   font-size: 14px;
+   line-height: 40px;
+   cursor:pointer;
+
+}
+.cur:hover{
+	background:#000000;
+	color: #fff;
+  
+}
+
+/*第四部分的显示*/
+.col4{
+	background:0;
+	width: 100%;
+	height: 444px;
+	margin-top: 20px;
+	position: relative;
+    cursor: pointer;
+}
+.single_con{
+	background:0;
+	width: 100%
+	height:444px;
+	margin-top:20px;
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+.superSingle{
+	position: relative;
+	width: 1070px;
+	margin:0 auto;
+	height: 370px;
+}
+.sing_one{
+	background:0;
+	width: 210px;
+	height: 216px;
+	float: left;
+	font-size: 14px;
+	list-style: none;
+}
+.sing_one span{
+	font-size: 30px;
+	font-family: '华文琥珀';
+	font-style:bold;
+	color: #fbe9ea;
+    height: 81px;
+    width: 150px;
+    top: 20px;
+    left:50px;
+    margin: 0 auto;
+    position: relative;
+  
+}
+.single_text_font{
+	font-size: 14px;
+    color: #fff;
+    color: rgba(255,255,255,0.8);
+    display: block;
+    margin-right: 8px;
+    float: left;
+    height: 22px;
+    float: left;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    top: 30px;
+    left:50px;
+    position: relative;
+}
+.single_text_line{
+	border-bottom: 2px solid #fff;
+    position: absolute;
+    height:1px;
+    width: 28px;
+    top: 33px;
+    left:50px;
+    position: relative;
+}
+.sing_djs{
+	position: relative;
+	width: 120px;
+    height: 77px;
+    font-size: 18px;
+    position: relative;
+    color: rgba(255,255,255,0.8);
+    top: 40px;
+    left:50px;
+    float: left;
+}
+
+
+.superSingle_a{
+	background-color: #fff;
+	width: 210px;
+	height: 218px;
+	float: left;
+	font-size: 14px;
+	cursor: pointer;
+	list-style:none;
+}
+.superSingle_a:hover{
+	transform: scale(1.2);
+
+
+}
+.s_bz{
+	text-align:center;
+	color: #fff;
+	position: relative;;
+	top:10px;
+	line-height: 24px;
+	display: inline-block;
+	z-index: 1;
+}
+.sing_img{
+	width: 110px;
+    height: 110px;
+    top: 30px;
+    left: 50%;
+    margin-left: 30px;
+    image-rendering:pixelated;
+}
+
+.single_title{
+	height: 81px;
+    width: 150px;
+    top: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.s_title{
+    width: 153px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.s_bar{
+    width: 150px;
+    height: 6px;
+    margin-top: 10px;
+    background-color: #e2e2e2;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.s_progress{
+	height: 100%;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background-color: #d9161d;
+}
+.s_con{
+	height: 33px;
+    padding-top: 12px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.s_num_unit{
+    font-family: Tahoma,"Microsoft YaHei";
+    color: #e50113;
+    font-weight: bold;
+    font-size: 14px;
+}
+.s_num_act{
+    font-family: Tahoma,"Microsoft YaHei";
+    color: #e50113;
+    font-weight: bold;
+    font-size: 14px; 
+}
+.s_num_unit1{
+    text-decoration:line-through;
+}
+.s_num_line{
+	 text-decoration:line-through;
+}
+.superSingle_b{
+	background-color: #fff;
+	width: 210px;
+	height: 216px;
+	float: left;
+	font-size: 14px;
+	border:1px solid #fff;
+	list-style:none;
+}
+.superSingle_b:hover{
+	transform: scale(1.2);
+
+}
+.superSingle_c{
+	background-color: #fff;
+	width: 210px;
+	height: 216px;
+	float: left;
+	font-size: 14px;
+	border:1px solid #fff;
+	list-style:none;
+}
+.superSingle_c:hover{
+	transform: scale(1.2);
+
+}
+.superSingle_d{
+	background-color: #fff;
+	width: 210px;
+	height: 216px;
+	float: left;
+	font-size: 14px;
+	border:1px solid #fff;
+	list-style:none;
+}
+.superSingle_d:hover{
+	transform: scale(1.2);
+
+}
+.superSingle_e{
+	background-color: #fff;
+	width: 200px;
+	height: 216px;
+	float: left;
+	font-size: 14px;
+	border:1px solid #fff;
+	list-style:none;
+	margin-left:10px;
+}
+.superSingle_e:hover{
+	transform: scale(1.2);
+
+}
+.superSingle_f{
+	background-color: #fff;
+	width: 210px;
+	height: 216px;
+
+	float: left;
+	font-size: 14px;
+	border:1px solid #fff;
+	list-style:none;
+}
+.superSingle_f:hover{
+	transform: scale(1.2);
+
+}
+.superSingle_g{
+	background-color: #fff;
+	width: 210px;
+	height: 216px;
+	float: left;
+	font-size: 14px;
+	border:1px solid #fff;
+	list-style:none;
+}
+.superSingle_g:hover{
+	transform: scale(1.2);
+
+}
+.superSingle_h{
+	background-color: #fff;
+	width: 210px;
+	height: 216px;
+	float: left;
+	font-size: 14px;
+	border:1px solid #fff;
+	list-style:none;
+}
+.superSingle_h:hover{
+	transform: scale(1.2);
+
+}
+.superSingle_i{
+	background-color: #fff;
+	width: 206px;
+	height: 216px;
+	float: left;
+	font-size: 14px;
+	border:1px solid #fff;
+	list-style:none;
+}
+.superSingle_i:hover{
+	transform: scale(1.2);
+
+}

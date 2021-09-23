@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体查询 2</title>
+
+    <style>
+        /*<!--*/
+
+        /*and 每个特性同时成立*/
+        /*only 兼容*/
+        /*， 满足一个特性即可*/
+        /*not 对结果取反*/
+
+        /*-->*/
+        /*@media screen and (min-width: 500px) and (max-width: 800px){*/
+        /*    body{*/
+        /*        background-color: #bfa;*/
+        /*    }*/
+        /*}*/
+
+
+        /*@media screen and (width: 500px) ， (width: 800px) {*/
+        /*    body {*/
+        /*        background-color: #bfa;*/
+        /*    }*/
+        /*}*/
+
+        @media not screen and (orientation: portrait) {
+            body {
+                background-color: #bfa;
+            }
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+</body>
+</html>

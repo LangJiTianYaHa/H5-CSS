@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02.练习</title>
+    
+    <style>
+    
+        
+/*        设置.box1的属性*/
+        .box1{
+            width: 200px;
+            height: 200px;
+/*            background-color: #bfa;*/
+            margin: 200px auto;
+            transition: all 2s;
+            
+/*            transtion-origin  指定变形的原点*/
+            
+            transform-origin: top left;
+            
+            position: relative;
+            
+        }
+        
+/*        鼠标移入box1时的 状态*/
+        
+        .box1:hover{
+            transform: rotateZ(360deg);
+            
+        }
+        
+/*        使得 inner相对于box1 绝对定位*/
+        .box1 .inner{
+            position: absolute;
+            transition: 2s all;
+            transform-origin: top left;
+        }
+        
+/*        设置六张图片的属性*/
+        .box1:hover .inner:nth-child(1){
+            transform: rotateZ(360deg);
+        }
+    
+        .box1:hover .inner:nth-child(2){
+            transform: rotateZ(300deg);
+        }
+    
+        .box1:hover .inner:nth-child(3){
+            transform: rotateZ(240deg);
+        }
+    
+        .box1:hover .inner:nth-child(4){
+            transform: rotateZ(180deg);
+        }
+    
+        .box1:hover .inner:nth-child(5){
+            transform: rotateZ(120deg);
+        }
+    
+        .box1:hover .inner:nth-child(6){
+            transform: rotateZ(60deg);
+        }
+    
+    
+    </style>
+    
+    
+</head>
+<body>
+ <div class="box1">
+  <div class="inner"><img src="img/1.jpg" alt=""></div>
+  <div class="inner"><img src="img/2.jpg" alt=""></div>
+  <div class="inner"><img src="img/3.jpg" alt=""></div>
+  <div class="inner"><img src="img/4.jpg" alt=""></div>
+  <div class="inner"><img src="img/5.jpg" alt=""></div>
+  <div class="inner"><img src="img/6.jpg" alt=""></div>
+   
+    </div>
+</body>
+</html>

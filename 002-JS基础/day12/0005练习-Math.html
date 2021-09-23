@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script type="text/javascript">
+			/*
+			 * Math
+			 * 	- Math和其他的对象不同，它不是一个构造函数，
+			 * 		它属于一个工具类不用创建对象，它里边封装了数学运算相关的属性和方法
+			 * 	- 比如
+			 * 		Math.PI 表示的圆周率
+			 */
+//			console.log(Math.PI);
+
+//			console.log(Math.abs(-1));
+			
+			/*
+			 * ceil(x) 对上取整
+			 * floor(x) 对下取整
+			 * round(x) 四舍五入
+			 */
+			
+			/*console.log(Math.ceil(2.6));
+			console.log(Math.floor(5.9));
+			console.log(Math.round(2.1));*/
+			
+			/*
+			 max(x,y,z,...):最大值
+			 min(x,y,z,...)：最小值
+			 pow(x,y) x的y次幂
+			 sqrt(x)  平方根
+			 
+			 */
+			/*console.log(Math.max(0.2,6,82,10));
+			console.log(Math.min(0.2,6,82,10));
+			console.log(Math.pow(2,4));
+			console.log(Math.sqrt(16));
+			*/
+			
+			/*
+			 random()  返回0-1之间的数
+			 Math.round(Math.random()*x)   返回0-x之间的数
+			 
+			
+			 Math.round(Math.random()*(y-x)+x)   返回x-y之间的随机数
+
+	        */
+	       
+	       for(var i =0; i<100;i++){
+	       // 0-1
+		       var result = Math.random();
+		   //0 - 20    
+		       result = Math.round(Math.random() * 20);
+		       
+		   //5 - 30
+		       result = Math.round(Math.random()*25+5);
+		       
+			   console.log(result);
+			
+			}
+			
+		</script>
+		
+		
+		
+	</head>
+	<body>
+	</body>
+</html>

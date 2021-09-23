@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时钟练习</title>
+    <style>
+    
+        .clock-wrapper{
+            width: 500px;
+            height: 500px;
+            border: 4px solid black;
+            margin: 50px auto;
+            border-radius: 50%;
+            
+            position: relative;
+            overflow: hidden;
+            
+            background: url("img/1024px-Analogue_clock_face.svg.png") no-repeat center center/100%;
+        }
+        
+        .clock-wrapper>div{
+            
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+/*        设置时针*/
+        .hour-wrapper{
+            width: 70%;
+            height: 70%;
+/*            background-color: aqua;*/
+            border-radius: 50%;
+/*            z-index: 3;*/
+             animation: shizhong 6000s linear infinite;
+            
+        }
+        
+        .hour{
+            height: 50%;
+            width: 8px;
+            background-color: black;
+            margin: 0 auto;
+        }
+        
+/*        设置分针*/
+        .min-wrapper{
+            width: 80%;
+            height: 80%;
+/*            background-color: orange;*/
+            border-radius: 50%;
+/*            z-index: 2;*/
+            animation: shizhong 600s linear infinite;
+            
+            
+        }
+        
+        .min{
+            height: 50%;
+            width: 4px;
+            background-color: black;
+            margin: 0 auto;
+        }
+    
+    /*        设置秒针*/
+        .sec-wrapper{
+            width: 90%;
+            height: 90%;
+/*            background-color: blue;*/
+            border-radius: 50%;
+             animation: shizhong 10s steps(60) infinite;
+        }
+        
+        .sec{
+            height: 50%;
+            width: 3px;
+            background-color: red;
+            margin: 0 auto;
+            
+           
+        }
+        
+        
+        
+        @keyframes shizhong{
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+    
+</head>
+<body>
+   
+<!--   创建表的容器-->
+   <div class="clock-wrapper">
+       
+<!--       时钟-->
+       <div class="hour-wrapper">
+           <div class="hour"></div>
+       </div>
+       
+<!--       分钟-->
+       <div class="min-wrapper">
+           <div class="min"></div>
+       </div>
+<!--       秒钟-->
+       <div class="sec-wrapper">
+           <div class="sec"></div>
+       </div>
+   </div>
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>立方体练习</title>
+    <style>
+        html{
+            perspective: 800px;
+            
+        }
+        
+        .box1{
+            
+/*            设置3d 变形效果*/
+            transform-style: preserve-3d;
+            width: 400px;
+            height: 400px;
+/*            background-color: #bfa;*/
+            margin: 200px auto;
+            
+            transition: all 2s;
+            animation: liti 10s linear infinite;
+            
+            position: relative;
+        }
+        .box1>.box2{
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            
+            line-height: 400px;
+            text-align: center;
+            font-size: 100px;
+            opacity: .5;
+            
+            transition: all 2s;
+            
+            position: absolute;
+            
+        }
+        
+        
+/*        设置动画效果*/
+        @keyframes liti{
+            from{
+                transform: rotateX(0) rotateY(0);
+                
+            }
+            to{
+                transform: rotateX(360deg) rotateY(360deg);
+                
+            }
+        }
+        
+        
+/*        设置6个面的变形效果*/
+        .box1>div:nth-child(1){
+            background-color: yellow;
+            transform: rotateY(90deg) translateZ(200px);
+         
+        }
+        
+        .box1>div:nth-child(2){
+            background-color: saddlebrown;
+            transform: rotateY(-90deg) translateZ(200px);
+           
+        }
+    
+        .box1>div:nth-child(3){
+            background-color: yellow;
+            transform: rotateX(90deg) translateZ(200px);
+           
+        }
+        .box1>div:nth-child(4){
+            background-color:aqua;
+            transform: rotateX(-90deg) translateZ(200px);
+          
+        }
+        
+         .box1>div:nth-child(5){
+            background-color:bisque;
+            transform: rotateX(0) translateZ(200px);
+          
+        }
+        
+         .box1>div:nth-child(6){
+            background-color:chartreuse;
+            transform: rotateX(180deg) translateZ(200px);
+          
+        }
+        
+/*        设置图片的大小*/
+        .box2 img{
+            width: 400px;
+            height: 400px;
+        }
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+   <div class="box1">
+       <div class="box2"><img src="ai/1.jpg" ></div>
+       <div class="box2"><img src="ai/2.jpg" ></div>
+       <div class="box2"><img src="ai/3.jpg" ></div>
+       <div class="box2"><img src="ai/4.jpg" ></div>
+       <div class="box2"><img src="ai/5.jpg" ></div>
+       <div class="box2"><img src="ai/6.jpg" ></div>
+      
+      
+   </div>
+    
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>阳光爱尚美食</title>
+		<!--链接图片及CSS-->
+		<link rel="shortcut icon" type="images/x-icon" href="images/xlogo.png"/>		
+		<!--引入样式-->
+		<link rel="stylesheet" href="css/food.css" />
+		<script src="JS/main.js"></script>
+	</head>
+	<body>
+		<!--弹窗-->
+		<div id="floatDiv">
+			<img src="images/干饭.png" alt="弹窗广告">
+		</div>
+    <script >
+    //获取图片所在的div对象
+    var imageDiv=document.getElementById("floatDiv");
+    //设置div起始点坐标
+    var x=0,y=0;
+    //设置div行进的速度
+    var xSpeed=2,ySpeed=1;
+    //设置图片移动
+    var w=document.documentElement.clientWidth-200;
+    var h=document.documentElement.clientWidth-600;
+    function floatdiv(){
+        //比较图片是否到达边界，如查到达边界 改变方向;如未到达边界
+        if(x>w||x<0) xSpeed= -xSpeed;
+        if(y>h||y<0) ySpeed= -ySpeed;
+
+        x+=xSpeed;
+        y+=ySpeed;
+
+        //设置坐标值，起始坐标+速度
+        imageDiv.style.top=y+"px";
+        imageDiv.style.left=x+"px";
+        setTimeout("floatdiv()",10);
+    }
+
+    floatdiv();
+</script>
+		<!--头部开始-->
+		<header>			
+			</div>
+			<div class="title"><p>阳光爱尚美食</p></div>
+			<div class="logo"></div>			
+		</header>
+		
+		<menu>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">主食</a></li>
+				<li><a href="#">荤菜</a></li>
+				<li><a href="#">素菜</a></li>
+				<li><a href="#">甜品</a></li>
+				<li><a href="#">小吃</a></li>
+			</ul>
+		</menu>
+		
+		<article>
+			<div class="topic1">
+				<p></p>
+				<h1>每日推荐</h1>
+				<div class="search">
+					<input type="text" />
+					<input type="button" value="站内搜索" />
+				</div>
+				<ul>
+					<li>
+						<a href="#"><img src="images/可乐鸡翅.jpg"/></a>
+						<span>28¥</span>
+						<h5>可乐鸡翅</h5>
+					</li>
+					<li>
+						<a href="#"><img src="images/蛋糕.jpg"/></a>
+						<span>15¥</span>
+						<h5>提拉米苏</h5>
+					</li>
+					<li>
+						<a href="#"><img src="images/糖醋排骨.jpg"/></a>
+						<span>28¥</span>
+						<h5>糖醋排骨</h5>
+					</li>
+					<li>
+						<a href="#"><img src="images/龙虾.jpg"/></a>
+						<span>75¥</span>
+						<h5>深海龙虾</h5>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="topic2">
+				<p></p>
+				<h1>优惠菜品</h1>
+				<div class="shaoma">
+					<h2>微信公众号</h2>
+					<hr></hr>
+					<img src="images/m.png"/>
+				</div>
+				<ul>
+					<li>
+					<a href="#"><img src="images/生蚝.jpg"/></a>
+					<span>49¥</span>
+					<h5>蒜蓉生蚝</h5>
+					</li>
+					<li>
+					<a href="#"><img src="images/东坡肉.jpg"/></a>
+					<span>49¥</span>
+					<h5>东坡肉</h5>
+					</li>
+					<li>
+					<a href="#"><img src="images/蛋糕1.jpg"/></a>
+					<span>15¥</span>
+					<h5>丝袜蛋糕</h5>
+					</li>
+					<li>
+					<a href="#"><img src="images/披萨.jpg"/></a>
+					<span>50¥</span>
+					<h5>芝士披萨</h5>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="topic3">
+				<p></p>
+				<h1>今日套餐</h1>
+				<div class="tishi">
+					<h2>特别提示</h2>
+                   <hr></hr>
+                   <h4><br>请客人保管好自己的财产安全和账户密码。</h4>
+				</div>
+				<ul>
+					<li>
+						<a href="#"><img src="images/咖喱饭.jpg"/></a>
+						<span>39¥</span>
+						<h5>咖喱鸡饭</h5>
+					</li>
+					<li>
+						<a href="#"><img src="images/套餐.jpg"/></a>
+						<span>28¥</span>
+						<h5>排骨饭</h5>
+					</li>
+					<li>
+						<a href="#"><img src="images/蛋糕2.jpg"/></a>
+						<span>20¥</span>
+						<h5>千层蛋糕</h5>
+					</li>
+					<li>
+						<a href="#"><img src="images/蛋糕3.jpg"/></a>
+						<span>25¥</span>
+						<h5>水果蛋糕</h5>
+					</li>
+				</ul>
+			</div>
+		</article>
+		<footer>
+			<p>
+				<a href="#">关于我们</a>
+				<a href="#">联系我们</a>
+				<a href="#">加入收藏</a>
+				<a href="#">留言板</a>
+			</p>
+			<p class="company">@@@阳光爱尚美食@@@：1786955345@qq.com</p>
+			<p>地址：福州市马尾区阳光学院	&nbsp;&nbsp;&nbsp;联系方式:88888888</p>
+		</footer>
+	</body>
+</html>

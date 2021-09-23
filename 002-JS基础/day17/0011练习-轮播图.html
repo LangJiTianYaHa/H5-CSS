@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播图练习</title>
+
+		<style type="text/css">
+			/*
+			 去除默认样式
+			 * */
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			/* 设置outer 属性*/
+			
+			#outer {
+				width: 520px;
+				height: 333px;
+				background-color: greenyellow;
+				margin: 50px auto;
+				padding: 10px 0;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			#imgList {
+				list-style: none;
+				position: absolute;
+				left: 0;
+				/*设置ul的宽度*/
+				width: 2600px;
+			}
+			
+			#imgList li {
+				float: left;
+				margin: 0 10px;
+			}
+			/*设置导航按钮  */
+			
+			#navDiv {
+				position: absolute;
+				bottom: 15px;
+				/*
+				 (520-25*5)/2 = 197.5
+				 * 
+				 * */
+				/*left: 197px;*/
+			}
+			
+			#navDiv a {
+				float: left;
+				width: 15px;
+				height: 15px;
+				background-color: red;
+				opacity: 0.5;
+				margin: 5px;
+			}
+			/*
+			 * 设置鼠标移入效果
+			 */
+			
+			#navDiv a:hover {
+				background-color: black;
+			}
+		</style>
+
+		<script type="text/javascript" src="js/tools.js">
+		</script>
+
+		<script type="text/javascript">
+			window.onload = function() {
+
+				//设置imgList的宽度
+				//1.获取imgList
+				//2.获取所有的img
+				var imgList = document.getElementById("imgList");
+				var imgArr = document.getElementsByTagName("img");
+				imgList.style.width = 520 * imgArr.length + "px";
+
+				////设置navDiv的left值
+				var navDiv = document.getElementById("navDiv");
+				var outer = document.getElementById("outer");
+				navDiv.style.left = (outer.offsetWidth - navDiv.offsetWidth) / 2 + "px";
+
+				/*
+				 	点击超链接切换到指定的图片
+				 		点击第一个超链接，显示第一个图片
+				 		点击第二个超链接，显示第二个图片
+				 * */
+				var index = 0;
+				var allA = document.getElementsByTagName("a");
+				allA[index].style.backgroundColor = "black";
+
+				for(var i = 0; i < allA.length; i++) {
+
+					//为每一个超链接都添加y一个num属性
+					allA[i].num = i;
+					allA[i].onclick = function() {
+						index = this.num;
+
+						//imgList.style.left = -520*index+"px";
+						/*setA();*/
+						//使用move函数 来切换图片
+						move(imgList, "left", -520 * index, 20, function() {
+
+						});
+
+					};
+				}
+
+				//创建一个方法用来设置 选中的a
+				function setA() {
+					for(var i = 0; i < allA.length; i++) {
+						allA[i].style.backgroundColor = "";
+						allA[index].style.backgroundColor = "black";
+					}
+				};
+
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<!--创建一个外部的div-->
+		<div id="outer">
+			<!--创建ul  用于放置图片-->
+			<ul id="imgList">
+				<li><img src="img/1.jpg" /></li>
+				<li><img src="img/2.jpg" /></li>
+				<li><img src="img/3.jpg" /></li>
+				<li><img src="img/4.jpg" /></li>
+				<li><img src="img/5.jpg" /></li>
+			</ul>
+
+			<!--  创建导航按钮-->
+			<div id="navDiv">
+
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+/*        设置导航条*/
+        .nav-bar{
+/*            设置总宽度*/
+            width: 1210px;
+/*            设置高度*/
+            height: 48px;
+/*            设置背景颜色*/
+            background-color: #E8E7E3;
+/*            设置居中*/
+            margin: 50px auto;
+        }
+        
+/*        设置导航条中的链接*/
+        .nav-bar .link{
+/*            设置向左浮动*/
+            float: left;
+/*            设置高度*/
+            height: 100%;
+            
+/*            去除下划线*/
+            text-decoration: none;
+/*            设置行高，使文字垂直居中*/
+            line-height: 48px;
+/*            设置字体颜色*/
+            color: #333;
+/*            设置字体的大小*/
+            font-size: 20px;
+/*            设置左右的内边距*/
+            padding: 0 30px;
+            
+        }
+        
+/*        设置鼠标移入的效果*/
+/*        hover里所设置样式，应该仅仅是鼠标移入后和移入前不同的样式*/
+        .nav-bar a:hover{
+            color: white;
+            background-color: black;
+        }
+    
+    </style>
+</head>
+<body>
+   
+<!--   定义页面的结构-->
+  <nav class="nav-bar">
+      <a class="link" href="#">HTML/CSS</a>
+      <a class="link" href="#">JavaScript</a>
+      <a class="link" href="#">Server Side</a>
+      <a class="link" href="#">ASP.NET</a>
+      <a class="link" href="#">XML</a>
+      <a class="link" href="#">Web Services</a>
+      <a class="link" href="#">Web Building</a>
+  </nav>
+   
+    
+</body>
+</html>
